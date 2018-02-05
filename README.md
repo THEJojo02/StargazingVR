@@ -1,2 +1,2 @@
 # StargazingVR
-A smart VR game
+A smart VR game made with Unity
