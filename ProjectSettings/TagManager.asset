@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Sonne
+  - Merkur
+  - Venus
+  - Erde
+  - Mars
+  - Jupiter
+  - Saturn
+  - Uranus
+  - Neptun
+  - Mond
   layers:
   - Default
   - TransparentFX

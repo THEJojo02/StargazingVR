@@ -19,11 +19,11 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4000013912359922}
-  - component: {fileID: 135000010323760288}
+  - component: {fileID: 146231342420184812}
   - component: {fileID: 54000011112244728}
   - component: {fileID: 114000012880271118}
   m_Layer: 0
-  m_Name: SnapDropZone
+  m_Name: SnapDropZone 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,15 +78,32 @@ MonoBehaviour:
   validObjectListPolicy: {fileID: 0}
   displayDropZoneInEditor: 1
   defaultSnappedObject: {fileID: 0}
---- !u!135 &135000010323760288
-SphereCollider:
+--- !u!146 &146231342420184812
+WheelCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010066341254}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.25
   m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 1.27
+  m_SuspensionSpring:
+    spring: 35000
+    damper: 4500
+    targetPosition: 0.5
+  m_SuspensionDistance: 0.3
+  m_ForceAppPointDistance: 0
+  m_Mass: 20
+  m_WheelDampingRate: 0.25
+  m_ForwardFriction:
+    m_ExtremumSlip: 0.4
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.5
+    m_Stiffness: 1
+  m_SidewaysFriction:
+    m_ExtremumSlip: 0.2
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.5
+    m_AsymptoteValue: 0.75
+    m_Stiffness: 1
+  m_Enabled: 1
