@@ -1,50 +1,48 @@
 fileFormatVersion: 2
-guid: 392624931036f9c4dba9afb0a349d696
-timeCreated: 1519427985
+guid: 4df35374c4b0ff54d97f2215634d0902
+timeCreated: 1519674077
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: Erde
-    100002: Hemi
-    100004: Jupiter
-    100006: Mars
-    100008: Merkur
-    100010: Mond
-    100012: Neptun
-    100014: //RootNode
-    100016: Saturn
-    100018: Saturnring
-    100020: Sonne
-    100022: Uranus
-    100024: Uranusring
-    100026: Venus
+    100002: Jupiter
+    100004: Mars
+    100006: Merkur
+    100008: Mond
+    100010: Neptun
+    100012: //RootNode
+    100014: Saturn
+    100016: Saturnring
+    100018: Sonne
+    100020: Uranus
+    100022: Uranusring
+    100024: Venus
     400000: Erde
-    400002: Hemi
-    400004: Jupiter
-    400006: Mars
-    400008: Merkur
-    400010: Mond
-    400012: Neptun
-    400014: //RootNode
-    400016: Saturn
-    400018: Saturnring
-    400020: Sonne
-    400022: Uranus
-    400024: Uranusring
-    400026: Venus
-    2100000: Uranus
-    2100002: Uranusring
-    2100004: Neptun
-    2100006: Merkur
-    2100008: Sonne
-    2100010: Mond
-    2100012: Erde
-    2100014: Mars
-    2100016: Saturn
-    2100018: Saturnring
-    2100020: Jupiter
-    2100022: Venus
+    400002: Jupiter
+    400004: Mars
+    400006: Merkur
+    400008: Mond
+    400010: Neptun
+    400012: //RootNode
+    400014: Saturn
+    400016: Saturnring
+    400018: Sonne
+    400020: Uranus
+    400022: Uranusring
+    400024: Venus
+    2100000: Venus
+    2100002: Jupiter
+    2100004: Saturn
+    2100006: Saturnring
+    2100008: Mars
+    2100010: Erde
+    2100012: Mond
+    2100014: Sonne
+    2100016: Merkur
+    2100018: Neptun
+    2100020: Uranus
+    2100022: Uranusring
     2300000: Erde
     2300002: Jupiter
     2300004: Mars
@@ -69,19 +67,18 @@ ModelImporter:
     3300018: Uranus
     3300020: Uranusring
     3300022: Venus
-    4300000: Uranus
-    4300002: Uranusring
-    4300004: Neptun
-    4300006: Merkur
-    4300008: Sonne
-    4300010: Mond
-    4300012: Erde
-    4300014: Mars
-    4300016: Saturn
-    4300018: Saturnring
-    4300020: Jupiter
-    4300022: Venus
-    10800000: Hemi
+    4300000: Venus
+    4300002: Jupiter
+    4300004: Saturn
+    4300006: Saturnring
+    4300008: Mars
+    4300010: Erde
+    4300012: Mond
+    4300014: Sonne
+    4300016: Merkur
+    4300018: Neptun
+    4300020: Uranus
+    4300022: Uranusring
   externalObjects: {}
   materials:
     importMaterials: 1
