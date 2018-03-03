@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 4df35374c4b0ff54d97f2215634d0902
-timeCreated: 1519674077
+timeCreated: 1520099866
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -31,18 +31,18 @@ ModelImporter:
     400020: Uranus
     400022: Uranusring
     400024: Venus
-    2100000: Venus
-    2100002: Jupiter
-    2100004: Saturn
-    2100006: Saturnring
-    2100008: Mars
-    2100010: Erde
-    2100012: Mond
-    2100014: Sonne
-    2100016: Merkur
-    2100018: Neptun
-    2100020: Uranus
-    2100022: Uranusring
+    2100000: Uranus
+    2100002: Uranusring
+    2100004: Neptun
+    2100006: Merkur
+    2100008: Sonne
+    2100010: Mond
+    2100012: Erde
+    2100014: Mars
+    2100016: Saturn
+    2100018: Saturnring
+    2100020: Jupiter
+    2100022: Venus
     2300000: Erde
     2300002: Jupiter
     2300004: Mars
@@ -67,24 +67,24 @@ ModelImporter:
     3300018: Uranus
     3300020: Uranusring
     3300022: Venus
-    4300000: Venus
-    4300002: Jupiter
-    4300004: Saturn
-    4300006: Saturnring
-    4300008: Mars
-    4300010: Erde
-    4300012: Mond
-    4300014: Sonne
-    4300016: Merkur
-    4300018: Neptun
-    4300020: Uranus
-    4300022: Uranusring
+    4300000: Uranus
+    4300002: Uranusring
+    4300004: Neptun
+    4300006: Merkur
+    4300008: Sonne
+    4300010: Mond
+    4300012: Erde
+    4300014: Mars
+    4300016: Saturn
+    4300018: Saturnring
+    4300020: Jupiter
+    4300022: Venus
   externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
