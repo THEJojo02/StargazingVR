@@ -185,10 +185,11 @@ namespace VRTK
                 ioCheck.SaveCurrentState();
                 StopCoroutine("AttemptForceSnapAtEndOfFrame");
                 if (ioCheck.IsGrabbed())
-                {
+                {	
+					
                     ioCheck.ForceStopInteracting();
                     StartCoroutine(AttemptForceSnapAtEndOfFrame(objectToSnap));
-                }
+					}
                 else
                 {
                     AttemptForceSnap(objectToSnap);
