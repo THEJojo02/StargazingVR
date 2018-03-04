@@ -1,22 +1,59 @@
 fileFormatVersion: 2
-guid: 6056efff76a3afe4092e80d0f09b58d5
-timeCreated: 1520100996
+guid: 8be909203c0ee864ab814d7056c94019
+timeCreated: 1520179252
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: Erdbahn
+    100002: Jubiterbahn
+    100004: Marsbahn
+    100006: Merkurbahn
+    100008: Neptunbahn
+    100010: //RootNode
+    100012: Saturnbahn
+    100014: Uranusbahn
+    100016: Venusbahn
+    400000: Erdbahn
+    400002: Jubiterbahn
+    400004: Marsbahn
+    400006: Merkurbahn
+    400008: Neptunbahn
+    400010: //RootNode
+    400012: Saturnbahn
+    400014: Uranusbahn
+    400016: Venusbahn
     2100000: No Name
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Circle
+    2300000: Erdbahn
+    2300002: Jubiterbahn
+    2300004: Marsbahn
+    2300006: Merkurbahn
+    2300008: Neptunbahn
+    2300010: Saturnbahn
+    2300012: Uranusbahn
+    2300014: Venusbahn
+    3300000: Erdbahn
+    3300002: Jubiterbahn
+    3300004: Marsbahn
+    3300006: Merkurbahn
+    3300008: Neptunbahn
+    3300010: Saturnbahn
+    3300012: Uranusbahn
+    3300014: Venusbahn
+    4300000: Uranusbahn
+    4300002: Saturnbahn
+    4300004: Jubiterbahn
+    4300006: Marsbahn
+    4300008: Erdbahn
+    4300010: Venusbahn
+    4300012: Merkurbahn
+    4300014: Neptunbahn
   externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
