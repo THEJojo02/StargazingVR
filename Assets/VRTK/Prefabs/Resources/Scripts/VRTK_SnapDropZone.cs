@@ -115,12 +115,16 @@ namespace VRTK
         protected const string HIGHLIGHT_OBJECT_NAME = "HighlightObject";
         protected const string HIGHLIGHT_EDITOR_OBJECT_NAME = "EditorHighlightObject";
 
+
+		 
+
         public virtual void OnObjectEnteredSnapDropZone(SnapDropZoneEventArgs e)
         {
             if (ObjectEnteredSnapDropZone != null)
-            {
+			{   
+				
                 ObjectEnteredSnapDropZone(this, e);
-            }
+				}
         }
 
         public virtual void OnObjectExitedSnapDropZone(SnapDropZoneEventArgs e)
@@ -173,10 +177,13 @@ namespace VRTK
             GenerateObjects();
         }
 
+
         /// <summary>
         /// the ForceSnap method attempts to automatically attach a valid game object to the snap drop zone.
         /// </summary>
         /// <param name="objectToSnap">The GameObject to attempt to snap.</param>
+		/// public class ExampleClass : MonoBehaviour
+
         public virtual void ForceSnap(GameObject objectToSnap)
         {
             VRTK_InteractableObject ioCheck = objectToSnap.GetComponentInParent<VRTK_InteractableObject>();
@@ -187,9 +194,9 @@ namespace VRTK
                 if (ioCheck.IsGrabbed())
                 {	
 					
-                    ioCheck.ForceStopInteracting();
-                    StartCoroutine(AttemptForceSnapAtEndOfFrame(objectToSnap));
-					}
+                    ioCheck.ForceStopInteracting(); 
+						StartCoroutine(AttemptForceSnapAtEndOfFrame(objectToSnap));}
+					
                 else
                 {
                     AttemptForceSnap(objectToSnap);
@@ -306,7 +313,9 @@ namespace VRTK
                 ForceUnsnap();
             }
         }
-
+		public float r = 0;
+		//float ra = GetComponent<SphereCollider>().radius;
+	//	float ra = Renderer.bounds.extents.magnitude;
         protected virtual void OnTriggerStay(Collider collider)
         {
             //Do sanity check to see if there should be a snappable object
@@ -323,10 +332,11 @@ namespace VRTK
                 {
                     ToggleHighlight(collider, true);
                 }
+				if (ra>= r){
 
                 //Attempt to snap the object
                 SnapObject(collider);
-            }
+				}}
         }
 
         protected virtual VRTK_InteractableObject ValidSnapObject(GameObject checkObject, bool grabState, bool checkGrabState = true)
