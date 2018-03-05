@@ -332,11 +332,11 @@ namespace VRTK
                 {
                     ToggleHighlight(collider, true);
                 }
-				if (ra>= r){
+				//if (ra>= r){
 
                 //Attempt to snap the object
                 SnapObject(collider);
-				}}
+				}//}
         }
 
         protected virtual VRTK_InteractableObject ValidSnapObject(GameObject checkObject, bool grabState, bool checkGrabState = true)
