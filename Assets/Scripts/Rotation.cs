@@ -9,6 +9,8 @@ public class Rotation : MonoBehaviour {
 	public GameObject Bahn;
 	public float speed;
 	public GameObject DropZone;
+	string dz;
+
 
 	void OrbitAround(){
 
@@ -19,11 +21,13 @@ public class Rotation : MonoBehaviour {
 
 	void Update () {
 
-		GameObject snap = GameObject.Find ("JupiterSnapZone");
-		isSnapped = snap.GetComponent<VRTK_SnapDropZone> ().isSnapped; //isSnapped aus dem Script der SnapDropZone
+		dz = DropZone.name;
+		GameObject snap = GameObject.Find("JupiterSnapZone");
+		isSnapped = snap.GetComponent<VRTK_SnapDropZone> ().isSnapped; //isSnapped(bool) aus dem Script der SnapDropZone
 		if (isSnapped == true) {
-			OrbitAround (); //rotieren, wenn Planet an richtiger Stelle
-
+			
+			OrbitAround (); 
+			//rotieren, wenn Planet an richtiger Stelle
 		}
 	}
 }
