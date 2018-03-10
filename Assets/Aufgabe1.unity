@@ -12832,6 +12832,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 54db15720fef36a4c92c10b70ca8af0e, type: 3}
+      propertyPath: m_Name
+      value: Jupiterbahn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54db15720fef36a4c92c10b70ca8af0e, type: 3}
   m_IsPrefabParent: 0
