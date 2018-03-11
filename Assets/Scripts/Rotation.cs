@@ -67,11 +67,12 @@ public class Rotation : MonoBehaviour {
 			
 			RotationPlaneten (); 
 			//rotieren, wenn Planet an richtiger Stelle
-		}
+		
 
 		if(isSnappedso == true){
 
 			RotationSonne ();
+		}
 		}
 	}
 }
