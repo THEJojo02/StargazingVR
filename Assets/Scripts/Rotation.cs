@@ -10,11 +10,17 @@ public class Rotation : MonoBehaviour {
 	public float speed; //Rotationsgeschwindigkeit
 
 
-	void OrbitAround(){
+	void RotationPlaneten(){
 
 		transform.RotateAround (Bahn.transform.position, Vector3.up, speed * Time.deltaTime); //Rotieren des Planeten
 	}
 
+	void RotationSonne(){
+
+		transform.RotateAround (Bahn.transform.position, Vector3.up, speed * Time.deltaTime); //Rotieren des Planeten
+	}
+
+	bool isSnappedso;
 	bool isSnappedmerkur;
 	bool isSnappedv;
 	bool isSnappede;
@@ -25,6 +31,9 @@ public class Rotation : MonoBehaviour {
 	bool isSnappedn;
 
 	void Update () {
+
+		GameObject snapso = GameObject.Find("SonneSnapZone");
+		isSnappedso = snapso.GetComponent<VRTK_SnapDropZone> ().isSnapped;
 
 		GameObject snapme = GameObject.Find("MerkurSnapZone");
 		isSnappedmerkur = snapme.GetComponent<VRTK_SnapDropZone> ().isSnapped;
@@ -56,8 +65,13 @@ public class Rotation : MonoBehaviour {
 		if (isSnappedmerkur == true &&  isSnappedv == true && isSnappede == true && isSnappedma == true && isSnappedj == true && isSnappeds == true &&
 			isSnappedu == true && isSnappedn == true) {
 			
-			OrbitAround (); 
+			RotationPlaneten (); 
 			//rotieren, wenn Planet an richtiger Stelle
+		}
+
+		if(isSnappedso == true){
+
+			RotationSonne ();
 		}
 	}
 }
