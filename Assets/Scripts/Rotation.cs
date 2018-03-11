@@ -6,10 +6,8 @@ using VRTK;
 public class Rotation : MonoBehaviour {
 
 
-	public GameObject Bahn;
-	public float speed;
-	//public GameObject DropZone;
-	string dz;
+	public GameObject Bahn; //Planetenbahn
+	public float speed; //Rotationsgeschwindigkeit
 
 
 	void OrbitAround(){
@@ -28,8 +26,8 @@ public class Rotation : MonoBehaviour {
 
 	void Update () {
 
-		/*GameObject snapmerkur = GameObject.Find("MerkurSnapZone");
-		isSnappedmerkur = snapmerkur.GetComponent<VRTK_SnapDropZone> ().isSnapped;*/
+		GameObject snapme = GameObject.Find ("MerkurSnapZone");
+		//isSnappedmerkur = snapme.GetComponent<VRTK_SnapDropZone> ().isSnapped;
 
 		GameObject snapv = GameObject.Find("VenusSnapZone");
 		isSnappedv = snapv.GetComponent<VRTK_SnapDropZone> ().isSnapped;
@@ -51,6 +49,8 @@ public class Rotation : MonoBehaviour {
 
 		GameObject snapn = GameObject.Find("NeptunSnapZone");
 		isSnappedn = snapn.GetComponent<VRTK_SnapDropZone> ().isSnapped;
+
+
 
 
 		if (/*isSnappedmerkur == true && */isSnappedv == true && isSnappede == true && isSnappedma == true && isSnappedj == true && isSnappeds == true &&
