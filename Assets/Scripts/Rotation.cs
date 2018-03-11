@@ -26,8 +26,8 @@ public class Rotation : MonoBehaviour {
 
 	void Update () {
 
-		GameObject snapme = GameObject.Find ("MerkurSnapZone");
-		//isSnappedmerkur = snapme.GetComponent<VRTK_SnapDropZone> ().isSnapped;
+		GameObject snapme = GameObject.Find("MerkurSnapZone");
+		isSnappedmerkur = snapme.GetComponent<VRTK_SnapDropZone> ().isSnapped;
 
 		GameObject snapv = GameObject.Find("VenusSnapZone");
 		isSnappedv = snapv.GetComponent<VRTK_SnapDropZone> ().isSnapped;
@@ -39,7 +39,7 @@ public class Rotation : MonoBehaviour {
 		isSnappedma = snapma.GetComponent<VRTK_SnapDropZone> ().isSnapped;
 
 		GameObject snapj = GameObject.Find("JupiterSnapZone");
-		isSnappedj = snapj.GetComponent<VRTK_SnapDropZone> ().isSnapped; //isSnapped(bool) aus dem Script der SnapDropZone
+		isSnappedj = snapj.GetComponent<VRTK_SnapDropZone> ().isSnapped; 
 
 		GameObject snapu = GameObject.Find("UranusSnapZone");
 		isSnappedu = snapu.GetComponent<VRTK_SnapDropZone> ().isSnapped;
@@ -48,12 +48,12 @@ public class Rotation : MonoBehaviour {
 		isSnappeds = snaps.GetComponent<VRTK_SnapDropZone> ().isSnapped;
 
 		GameObject snapn = GameObject.Find("NeptunSnapZone");
-		isSnappedn = snapn.GetComponent<VRTK_SnapDropZone> ().isSnapped;
+		isSnappedn = snapn.GetComponent<VRTK_SnapDropZone> ().isSnapped;//isSnapped(bool) aus dem Script der SnapDropZone
+
+		//prüfen, ob Planeten an richtiger Stelle
 
 
-
-
-		if (/*isSnappedmerkur == true && */isSnappedv == true && isSnappede == true && isSnappedma == true && isSnappedj == true && isSnappeds == true &&
+		if (isSnappedmerkur == true &&  isSnappedv == true && isSnappede == true && isSnappedma == true && isSnappedj == true && isSnappeds == true &&
 			isSnappedu == true && isSnappedn == true) {
 			
 			OrbitAround (); 
