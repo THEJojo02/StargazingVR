@@ -492,7 +492,7 @@ namespace VRTK
 		{
 			VRTK_InteractableObject ioCheck = ValidSnapObject (collider.gameObject, false);
 			//If the item is in a snappable position and this drop zone isn't snapped and the collider is a valid interactable object
-			if (Distancele > allowedDistance | Distanceri > allowedDistance && ioCheck.IsGrabbed () == true) {
+			if (Distancele > allowedDistance | Distanceri > allowedDistance) {
 				if (willSnap && !isSnapped && ioCheck != null) {
 					//Only snap it to the drop zone if it's not already in a drop zone
 					if (!ioCheck.IsInSnapDropZone ()) {
