@@ -1061,7 +1061,6 @@ GameObject:
   m_Component:
   - component: {fileID: 154780269}
   - component: {fileID: 154780268}
-  - component: {fileID: 154780270}
   m_Layer: 0
   m_Name: Wand
   m_TagString: Untagged
@@ -1117,18 +1116,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &154780270
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 154780267}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &176833574
 GameObject:
   m_ObjectHideFlags: 0
@@ -4323,6 +4310,7 @@ GameObject:
   m_Component:
   - component: {fileID: 805739293}
   - component: {fileID: 805739294}
+  - component: {fileID: 805739295}
   m_Layer: 0
   m_Name: RightHand
   m_TagString: Untagged
@@ -4357,6 +4345,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0893f0c8a7712e8458dc3722eef95aca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &805739295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 805739292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1376e1b174609ea4bbe9f612dc6c1388, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionright: {x: 0, y: 0, z: 0}
 --- !u!1 &808287549
 GameObject:
   m_ObjectHideFlags: 0
@@ -5735,7 +5735,7 @@ Prefab:
     - target: {fileID: 224000012623161658, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 202
+      value: 475
       objectReference: {fileID: 0}
     - target: {fileID: 224000012623161658, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3,
         type: 2}
@@ -8257,6 +8257,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1458246065}
   - component: {fileID: 1458246066}
+  - component: {fileID: 1458246067}
   m_Layer: 0
   m_Name: LeftHand
   m_TagString: Untagged
@@ -8291,6 +8292,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0893f0c8a7712e8458dc3722eef95aca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1458246067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1458246064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d300ecf5fb8a77c459bded188b1dd259, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionleft: {x: 0, y: 0, z: 0}
 --- !u!1 &1464486334
 GameObject:
   m_ObjectHideFlags: 0
