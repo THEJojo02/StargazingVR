@@ -285,21 +285,27 @@ namespace VRTK
 		public float allowedDistance;
 		public float Distanceri;
 		public float Distancele;
-		private Vector3 center; 
+		Vector3 center;
+		bool objectisgrabbed;
+		public	GameObject planet;
 
         protected virtual void Update()
 		{	GameObject left = GameObject.Find ("LeftHand");
 			posleft = left.GetComponent<PositionLeftHand> ().positionleft;
 
-
 			GameObject right = GameObject.Find ("RightHand");
 			posright = right.GetComponent<PositionRightHand> ().positionright;
 
+
+			var grabbed = planet.GetComponentInParent<VRTK_InteractableObject> ();
+			objectisgrabbed = grabbed.IsGrabbed ();
+
+			if (objectisgrabbed == true){
 			Distanceri = Vector3.Distance (posright,center);
-			Debug.Log (Distanceri);
 
 			Distancele = Vector3.Distance (posleft,center);
-			Debug.Log (Distancele);
+			
+			}
             CheckSnappedItemExists();
             CheckPrefabUpdate();
             CreateHighlightersInEditor();
