@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using VRTK;
+using UnityEngine.SceneManagement;
 
 public class Rotation : MonoBehaviour {
 
@@ -29,6 +30,7 @@ public class Rotation : MonoBehaviour {
 	bool isSnappeds;
 	bool isSnappedu;
 	bool isSnappedn;
+	public bool task1finished;
 
 	void Update () {
 
@@ -62,18 +64,42 @@ public class Rotation : MonoBehaviour {
 		//prüfen, ob Planeten an richtiger Stelle
 
 
-		if (isSnappedmerkur == true &&  isSnappedv == true && isSnappede == true && isSnappedma == true && isSnappedj == true && isSnappeds == true &&
-			isSnappedu == true && isSnappedn == true) {
+		if (isSnappedmerkur == true && isSnappedv == true && isSnappede == true && isSnappedma == true && isSnappedj == true && isSnappeds == true &&
+		    isSnappedu == true && isSnappedn == true) {
 			
 			RotationPlaneten (); 
 			//rotieren, wenn Planet an richtiger Stelle
 		
-		
+		}
 		if(isSnappedso == true){
 
 			RotationSonne ();
+				task1finished = true;
 		
 		}
-		}
+		
+		if (task1finished==true){
+			ModeSelect ();
+
+		}}
+	public float delay = 2f;
+	public void ModeSelect(){
+		StartCoroutine ("Wait");
 	}
-}
+	IEnumerator Wait(){
+		yield return new WaitForSeconds (5);
+		NextTask ();
+	}
+
+	public void LoadNextScene()
+	{
+		SceneManager.LoadScene ("Aufgabe2", LoadSceneMode.Additive);
+	}
+
+	public void NextTask()
+	{	
+		SceneManager.UnloadScene ("Aufgabe1");
+		LoadNextScene();
+	}
+	}
+
