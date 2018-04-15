@@ -14,6 +14,11 @@ TagManager:
   - Uranus
   - Neptun
   - Mond
+  - Vega
+  - Capella
+  - Atair
+  - AluMi
+  - Deneb
   layers:
   - Default
   - TransparentFX
