@@ -290,11 +290,11 @@ namespace VRTK
 		public	GameObject planet;
 
         protected virtual void Update()
-		{	GameObject left = GameObject.Find ("LeftHand");
+		{	GameObject left = GameObject.Find("LeftHand");
 			//GameObject left = GameObject.Find ("Controller(left)");
 			posleft = left.GetComponent<PositionLeftHand> ().positionleft;
 
-			GameObject right = GameObject.Find ("RightHand");
+			GameObject right = GameObject.Find("RightHand");
 			//GameObject right = GameObject.Find ("Controller(right)");
 			posright = right.GetComponent<PositionRightHand> ().positionright;
 
@@ -315,7 +315,7 @@ namespace VRTK
             //set reference to current highlightObjectPrefab
             previousPrefab = highlightObjectPrefab;
             SetObjectHighlight();
-        }
+		}
 
         protected virtual void OnTriggerEnter(Collider collider)
         {
