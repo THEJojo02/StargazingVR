@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using VRTK;
-
+using UnityEngine.SceneManagement;
 public class Aufgabe2 : MonoBehaviour
 {
 
@@ -12,6 +12,7 @@ public class Aufgabe2 : MonoBehaviour
     bool isSnappedCa;
     bool isSnappedAt;
     bool isSnappedAluMi;
+	bool task2finished;
 
     Material m_Material;
 
@@ -41,6 +42,7 @@ public class Aufgabe2 : MonoBehaviour
         GameObject snapAluMi = GameObject.Find("AluMiS");
         isSnappedAluMi = snapAluMi.GetComponent<VRTK_SnapDropZone>().isSnapped;
 
+
         //isSnapped(bool) aus dem Script der SnapDropZone
 
         //prüfen, ob Planeten an richtiger Stelle
@@ -51,11 +53,35 @@ public class Aufgabe2 : MonoBehaviour
 
             m_Material.color = Color.green;
             //werden grün, wenn Sterne an richtiger Stelle
-
-
+			task2finished = true;
 
         }
+
+		if (task2finished == true) {
+			ModeSelect ();
+		}
+
     }
+	public float delay = 2f;
+	public void ModeSelect(){
+		StartCoroutine ("Wait");
+	}
+	IEnumerator Wait(){
+		yield return new WaitForSeconds (10);
+		NextTask ();
+	}
+
+	public void LoadNextScene()
+	{
+		SceneManager.LoadScene ("Menu", LoadSceneMode.Additive);
+	}
+
+	public void NextTask()
+	{	
+		SceneManager.UnloadScene ("Aufgabe2");
+		LoadNextScene();
+	}
 }
+//}
 
 
