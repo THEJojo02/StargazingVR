@@ -1,25 +1,24 @@
 fileFormatVersion: 2
-guid: e70f75d59c6a8b94ebfd8df880938346
-timeCreated: 1523774054
+guid: 4e2d0cc3f19e3144488b337155e44785
+timeCreated: 1517074930
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Plane
-    100004: Plane.001
-    400000: //RootNode
-    400002: Plane
-    400004: Plane.001
-    2100000: Wasser
-    2100002: Schnee
-    2100004: Stein
-    2300000: Plane
-    2300002: Plane.001
-    3300000: Plane
-    3300002: Plane.001
-    4300000: Plane.001
-    4300002: Plane
+    100000: Camera
+    100002: //RootNode
+    100004: Decke
+    100006: Lamp
+    400000: Camera
+    400002: //RootNode
+    400004: Decke
+    400006: Lamp
+    2000000: Camera
+    2100000: No Name
+    2300000: Decke
+    3300000: Decke
+    4300000: Decke
+    10800000: Lamp
   externalObjects: {}
   materials:
     importMaterials: 1
