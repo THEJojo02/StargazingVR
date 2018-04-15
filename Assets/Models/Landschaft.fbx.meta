@@ -1,23 +1,25 @@
 fileFormatVersion: 2
-guid: b39a2245e66985e4eba9301a87467416
-timeCreated: 1520773460
+guid: 6f73ce59a204f3340ab5c419b84e44a4
+timeCreated: 1523782693
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     100002: Plane
-    100004: Sun
+    100004: Plane.001
     400000: //RootNode
     400002: Plane
-    400004: Sun
-    2100000: Material
-    2100002: Material.002
-    2100004: Grundstein
+    400004: Plane.001
+    2100000: Wasser
+    2100002: Schnee
+    2100004: Stein
     2300000: Plane
+    2300002: Plane.001
     3300000: Plane
-    4300000: Plane
-    10800000: Sun
+    3300002: Plane.001
+    4300000: Plane.001
+    4300002: Plane
   externalObjects: {}
   materials:
     importMaterials: 1
