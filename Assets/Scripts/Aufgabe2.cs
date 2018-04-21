@@ -27,7 +27,7 @@ public class Aufgabe2 : MonoBehaviour
     void Update()
     {
 
-        GameObject snapDe = GameObject.Find("DenebS");
+        /*GameObject snapDe = GameObject.Find("DenebS");
         isSnappedDe = snapDe.GetComponent<VRTK_SnapDropZone>().isSnapped;
 
         GameObject snapVe = GameObject.Find("VegaS");
@@ -40,7 +40,7 @@ public class Aufgabe2 : MonoBehaviour
         isSnappedAt = snapAt.GetComponent<VRTK_SnapDropZone>().isSnapped;
 
         GameObject snapAluMi = GameObject.Find("AluMiS");
-        isSnappedAluMi = snapAluMi.GetComponent<VRTK_SnapDropZone>().isSnapped;
+        isSnappedAluMi = snapAluMi.GetComponent<VRTK_SnapDropZone>().isSnapped;*/
 
 
         //isSnapped(bool) aus dem Script der SnapDropZone
@@ -62,6 +62,23 @@ public class Aufgabe2 : MonoBehaviour
 		}
 
     }
+
+	public void denebsnapped(){
+		isSnappedDe = true;
+	}
+	public void vegasnapped(){
+		isSnappedVe = true;
+	}
+	public void capellasnapped(){
+		isSnappedCa = true;
+	}
+
+	public void atairsnapped(){
+		isSnappedAt = true;
+	}
+	public void alkormizarsnapped(){
+		isSnappedAluMi = true;
+	}
 	public float delay = 2f;
 	public void ModeSelect(){
 		StartCoroutine ("Wait");
