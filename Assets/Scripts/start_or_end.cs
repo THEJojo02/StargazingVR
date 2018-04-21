@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class start_or_end : MonoBehaviour {
 
 	public void start(){
-		SceneManager.LoadScene ("MainScene", LoadSceneMode.Single);
+		SceneManager.LoadScene ("Brief", LoadSceneMode.Single);
 	}
 
 	public void end(){
