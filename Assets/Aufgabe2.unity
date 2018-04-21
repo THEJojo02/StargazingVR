@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414727, b: 0.121078536, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -608,6 +608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Platz: {fileID: 2040036658}
+  delay: 2
 --- !u!1 &763339698
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,6 +1174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Platz: {fileID: 1815583601}
+  delay: 2
 --- !u!1 &1117561796
 GameObject:
   m_ObjectHideFlags: 0
@@ -1338,7 +1340,7 @@ Prefab:
     - target: {fileID: 114000012880271118, guid: 5d323709f0cbd454196647d9d8f2dd84,
         type: 2}
       propertyPath: applyScalingOnSnap
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1000010066341254, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
       propertyPath: m_Name
@@ -1441,7 +1443,7 @@ Prefab:
     - target: {fileID: 114000012880271118, guid: 5d323709f0cbd454196647d9d8f2dd84,
         type: 2}
       propertyPath: applyScalingOnSnap
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1000010066341254, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
       propertyPath: m_Name
@@ -1741,6 +1743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Platz: {fileID: 391057591}
+  delay: 2
 --- !u!1 &1479838621
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,7 +1848,7 @@ Prefab:
     - target: {fileID: 114000012880271118, guid: 5d323709f0cbd454196647d9d8f2dd84,
         type: 2}
       propertyPath: applyScalingOnSnap
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1000010066341254, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
       propertyPath: m_Name
@@ -2066,7 +2069,7 @@ Prefab:
     - target: {fileID: 114000012880271118, guid: 5d323709f0cbd454196647d9d8f2dd84,
         type: 2}
       propertyPath: applyScalingOnSnap
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1000010066341254, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
       propertyPath: m_Name
@@ -2254,7 +2257,7 @@ Prefab:
     - target: {fileID: 114000012880271118, guid: 5d323709f0cbd454196647d9d8f2dd84,
         type: 2}
       propertyPath: applyScalingOnSnap
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1000010066341254, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
       propertyPath: m_Name
@@ -2483,6 +2486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Platz: {fileID: 1207170859}
+  delay: 2
 --- !u!1 &1739949826
 GameObject:
   m_ObjectHideFlags: 0
@@ -2768,6 +2772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Platz: {fileID: 1500904918}
+  delay: 2
 --- !u!1 &1791758520
 GameObject:
   m_ObjectHideFlags: 0
