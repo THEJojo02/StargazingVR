@@ -236,7 +236,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnObjectEnteredSnapDropZone:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 126509653}
+        m_MethodName: distance
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnObjectExitedSnapDropZone:
@@ -265,6 +276,20 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &126509653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 126509649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f508524f3e46aa340b55258ed22dca47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alloweddistance: 1.08
+  planet: {fileID: 665839619}
+  allowsnap: 0
 --- !u!4 &126509655 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013912359922, guid: 5d323709f0cbd454196647d9d8f2dd84,
@@ -318,7 +343,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnObjectEnteredSnapDropZone:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 136569283}
+        m_MethodName: distance
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnObjectExitedSnapDropZone:
@@ -347,6 +383,20 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &136569283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 136569279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f508524f3e46aa340b55258ed22dca47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alloweddistance: 1.11
+  planet: {fileID: 665839617}
+  allowsnap: 0
 --- !u!4 &136569285 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013912359922, guid: 5d323709f0cbd454196647d9d8f2dd84,
@@ -526,7 +576,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnObjectEnteredSnapDropZone:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 147911771}
+        m_MethodName: distance
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnObjectExitedSnapDropZone:
@@ -555,6 +616,20 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &147911771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 147911766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f508524f3e46aa340b55258ed22dca47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alloweddistance: 1.745
+  planet: {fileID: 665839613}
+  allowsnap: 0
 --- !u!1 &173548700 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100012, guid: 54db15720fef36a4c92c10b70ca8af0e, type: 3}
@@ -706,7 +781,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnObjectEnteredSnapDropZone:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 278376061}
+        m_MethodName: distance
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnObjectExitedSnapDropZone:
@@ -735,6 +821,20 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &278376061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 278376056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f508524f3e46aa340b55258ed22dca47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alloweddistance: 1
+  planet: {fileID: 665839621}
+  allowsnap: 0
 --- !u!4 &278376062 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013912359922, guid: 5d323709f0cbd454196647d9d8f2dd84,
@@ -3385,7 +3485,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnObjectEnteredSnapDropZone:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 946957872}
+        m_MethodName: distance
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnObjectExitedSnapDropZone:
@@ -3414,6 +3525,20 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &946957872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 946957868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f508524f3e46aa340b55258ed22dca47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alloweddistance: 1.3
+  planet: {fileID: 665839615}
+  allowsnap: 0
 --- !u!4 &946957874 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013912359922, guid: 5d323709f0cbd454196647d9d8f2dd84,
@@ -4248,7 +4373,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnObjectEnteredSnapDropZone:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1375673980}
+        m_MethodName: distance
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnObjectExitedSnapDropZone:
@@ -4277,6 +4413,20 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &1375673980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1375673975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f508524f3e46aa340b55258ed22dca47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alloweddistance: 1.15
+  planet: {fileID: 665839616}
+  allowsnap: 0
 --- !u!1 &1386977067
 GameObject:
   m_ObjectHideFlags: 0
@@ -5219,6 +5369,20 @@ MonoBehaviour:
   checkType: 1
   identifiers:
   - Sonne
+--- !u!114 &1745051104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1745051101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f508524f3e46aa340b55258ed22dca47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alloweddistance: 0
+  planet: {fileID: 665839622}
+  allowsnap: 0
 --- !u!4 &1745051105 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013912359922, guid: 5d323709f0cbd454196647d9d8f2dd84,
@@ -5237,7 +5401,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnObjectEnteredSnapDropZone:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1745051104}
+        m_MethodName: distance
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnObjectExitedSnapDropZone:
@@ -5760,7 +5935,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnObjectEnteredSnapDropZone:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2072500679}
+        m_MethodName: distance
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnObjectExitedSnapDropZone:
@@ -5789,6 +5975,20 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &2072500679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2072500674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f508524f3e46aa340b55258ed22dca47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alloweddistance: 1.06
+  planet: {fileID: 665839620}
+  allowsnap: 0
 --- !u!1001 &2082038972
 Prefab:
   m_ObjectHideFlags: 0
@@ -5963,7 +6163,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnObjectEnteredSnapDropZone:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2082038978}
+        m_MethodName: distance
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnObjectExitedSnapDropZone:
@@ -5992,6 +6203,20 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &2082038978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2082038973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f508524f3e46aa340b55258ed22dca47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alloweddistance: 1.54
+  planet: {fileID: 665839614}
+  allowsnap: 0
 --- !u!1 &2084066628
 GameObject:
   m_ObjectHideFlags: 0

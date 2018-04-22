@@ -279,33 +279,10 @@ namespace VRTK
                 ForceSnap(defaultSnappedObject);
             }
         }
-
-		public Vector3 posleft;
-		public Vector3 posright;
-		public float allowedDistance;
-		public float Distanceri;
-		public float Distancele;
-		Vector3 center;
-		bool objectisgrabbed;
-		public	GameObject planet;
+			
 
         protected virtual void Update()
-		{	GameObject left = GameObject.Find ("LeftController");
-			posleft = left.GetComponent<PositionLeftHand> ().positionleft;
-
-			GameObject right = GameObject.Find("RightController");
-			posright = right.GetComponent<PositionRightHand> ().positionright;
-
-
-			var grabbed = planet.GetComponentInParent<VRTK_InteractableObject> ();
-			objectisgrabbed = grabbed.IsGrabbed ();
-
-			if (objectisgrabbed == true){
-			Distanceri = Vector3.Distance (posright,center);
-
-			Distancele = Vector3.Distance (posleft,center);
-			
-			}
+		{	
             CheckSnappedItemExists();
             CheckPrefabUpdate();
             CreateHighlightersInEditor();
@@ -498,7 +475,7 @@ namespace VRTK
 		{
 			VRTK_InteractableObject ioCheck = ValidSnapObject (collider.gameObject, false);
 			//If the item is in a snappable position and this drop zone isn't snapped and the collider is a valid interactable object
-			if (Distancele > allowedDistance | Distanceri > allowedDistance) {
+		
 				if (willSnap && !isSnapped && ioCheck != null) {
 					//Only snap it to the drop zone if it's not already in a drop zone
 					if (!ioCheck.IsInSnapDropZone ()) {
@@ -527,7 +504,6 @@ namespace VRTK
 				//Force reset isSnapped if the item is grabbed but isSnapped is still true
 				isSnapped = (isSnapped && ioCheck && ioCheck.IsGrabbed () ? false : isSnapped);
 				wasSnapped = false;
-			}
 		}
 
         protected virtual void CreatePermanentClone()
