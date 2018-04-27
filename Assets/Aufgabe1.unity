@@ -706,6 +706,60 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 194518987}
   m_Mesh: {fileID: 4300016, guid: 4df35374c4b0ff54d97f2215634d0902, type: 3}
+--- !u!1001 &228625869
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 0f2772c3843937a439556e02b14f1508, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.859
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0f2772c3843937a439556e02b14f1508, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.003
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0f2772c3843937a439556e02b14f1508, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.801
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0f2772c3843937a439556e02b14f1508, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0f2772c3843937a439556e02b14f1508, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0f2772c3843937a439556e02b14f1508, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0f2772c3843937a439556e02b14f1508, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0f2772c3843937a439556e02b14f1508, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 0f2772c3843937a439556e02b14f1508, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 87b776ac566298c4d9464374632d0d0d, type: 2}
+    - target: {fileID: 100000, guid: 0f2772c3843937a439556e02b14f1508, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 0f2772c3843937a439556e02b14f1508, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0f2772c3843937a439556e02b14f1508, type: 3}
+  m_IsPrefabParent: 0
 --- !u!1 &278376056 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000010066341254, guid: 5d323709f0cbd454196647d9d8f2dd84,
@@ -762,12 +816,6 @@ MonoBehaviour:
   validObjectListPolicy: {fileID: 278376057}
   displayDropZoneInEditor: 1
   defaultSnappedObject: {fileID: 0}
-  posleft: {x: 0, y: 0, z: 0}
-  posright: {x: 0, y: 0, z: 0}
-  allowedDistance: 1
-  Distanceri: 0
-  Distancele: 0
-  planet: {fileID: 665839621}
 --- !u!114 &278376060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1031,6 +1079,169 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &332206632 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 0f2772c3843937a439556e02b14f1508, type: 3}
+  m_PrefabInternal: {fileID: 228625869}
+--- !u!114 &332206634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 332206632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd828872d92c3a94090d23b7b719f1e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultEvents:
+    OnValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 332206640}
+          m_MethodName: NextTask
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  interactWithoutGrab: 1
+  connectedTo: {fileID: 0}
+  direction: 1
+  activationDistance: 0.01
+  buttonStrength: 5
+  events:
+    OnPush:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 332206640}
+          m_MethodName: NextTask
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+--- !u!114 &332206635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 332206632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc2315305343a584e8758755b54117c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clipOnTouch: {fileID: 0}
+  strengthOnTouch: 0
+  durationOnTouch: 0
+  intervalOnTouch: 0.05
+  clipOnGrab: {fileID: 0}
+  strengthOnGrab: 0
+  durationOnGrab: 0
+  intervalOnGrab: 0.05
+  clipOnUse: {fileID: 0}
+  strengthOnUse: 0
+  durationOnUse: 0
+  intervalOnUse: 0.05
+--- !u!54 &332206636
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 332206632}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &332206637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 332206632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18055ba762aa3994f9c10208cd088bc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &332206638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 332206632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec2ac476f2fc9a45a4e69712580a603, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  precisionGrab: 0
+  rightSnapHandle: {fileID: 0}
+  leftSnapHandle: {fileID: 0}
+  throwVelocityWithAttachDistance: 0
+  throwMultiplier: 1
+  onGrabCollisionDelay: 0
+--- !u!114 &332206639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 332206632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3abaf4521bf2344ea21ed3020b98eb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableWhenIdle: 1
+  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  allowedTouchControllers: 0
+  ignoredColliders: []
+  isGrabbable: 1
+  holdButtonToGrab: 0
+  stayGrabbedOnTeleport: 1
+  validDrop: 1
+  grabOverrideButton: 0
+  allowedGrabControllers: 0
+  grabAttachMechanicScript: {fileID: 332206638}
+  secondaryGrabActionScript: {fileID: 332206637}
+  isUsable: 0
+  holdButtonToUse: 1
+  useOnlyIfGrabbed: 0
+  pointerActivatesUseAction: 0
+  useOverrideButton: 0
+  allowedUseControllers: 0
+  usingState: 0
+--- !u!114 &332206640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 332206632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c15089b10af9d5440b08432b7b64c881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finishedtask1: 0
+  Kugel: {fileID: 0}
 --- !u!1 &364107595
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,6 +1690,7 @@ GameObject:
   - component: {fileID: 665839670}
   - component: {fileID: 665839672}
   - component: {fileID: 665839674}
+  - component: {fileID: 665839648}
   m_Layer: 0
   m_Name: Sonne
   m_TagString: Sonne
@@ -1966,6 +2178,19 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   usingState: 0
+--- !u!114 &665839648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 665839622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c15089b10af9d5440b08432b7b64c881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finishedtask1: 0
+  Kugel: {fileID: 332206632}
 --- !u!114 &665839653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2376,7 +2601,6 @@ MonoBehaviour:
   Bahn: {fileID: 1366755680}
   speed: 50
   task1finished: 0
-  delay: 2
 --- !u!4 &665839675
 Transform:
   m_ObjectHideFlags: 0
@@ -2490,7 +2714,6 @@ MonoBehaviour:
   Bahn: {fileID: 1793464964}
   speed: 7
   task1finished: 0
-  delay: 2
 --- !u!23 &665839681
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2634,7 +2857,6 @@ MonoBehaviour:
   Bahn: {fileID: 55845044}
   speed: 20
   task1finished: 0
-  delay: 2
 --- !u!23 &665839688
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2997,7 +3219,6 @@ MonoBehaviour:
   Bahn: {fileID: 1036037501}
   speed: 10
   task1finished: 0
-  delay: 2
 --- !u!4 &665839715
 Transform:
   m_ObjectHideFlags: 0
@@ -3025,7 +3246,6 @@ MonoBehaviour:
   Bahn: {fileID: 173548700}
   speed: 15
   task1finished: 0
-  delay: 2
 --- !u!114 &665839717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3040,7 +3260,6 @@ MonoBehaviour:
   Bahn: {fileID: 1222869488}
   speed: 25
   task1finished: 0
-  delay: 2
 --- !u!114 &665839718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3055,7 +3274,6 @@ MonoBehaviour:
   Bahn: {fileID: 1497114720}
   speed: 35
   task1finished: 0
-  delay: 2
 --- !u!114 &665839719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3070,7 +3288,6 @@ MonoBehaviour:
   Bahn: {fileID: 1683999348}
   speed: 32
   task1finished: 0
-  delay: 2
 --- !u!114 &665839720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3085,7 +3302,6 @@ MonoBehaviour:
   Bahn: {fileID: 1886417350}
   speed: 42
   task1finished: 0
-  delay: 2
 --- !u!4 &665839721
 Transform:
   m_ObjectHideFlags: 0

@@ -70,19 +70,17 @@ public class Rotation : MonoBehaviour {
 			
 			RotationPlaneten (); 
 			//rotieren, wenn Planet an richtiger Stelle
+		}
 		
 		
 		if(isSnappedso == true){
 
 			RotationSonne ();
-				task1finished = true;
-		
-			}}
-		
-		if (task1finished==true){
-			ModeSelect ();
+			task1finished = true;
+			Debug.Log ("snapped");
+			}
+		}
 
-		}}
 	public void sonnesnapped(){
 		isSnappedso = true;
 	}
@@ -110,25 +108,8 @@ public class Rotation : MonoBehaviour {
 	public void neptunsnapped(){
 		isSnappedn = true;
 	}
+		
 
-	public float delay = 2f;
-	public void ModeSelect(){
-		StartCoroutine ("Wait");
-	}
-	IEnumerator Wait(){
-		yield return new WaitForSeconds (5);
-		NextTask ();
-	}
 
-	public void LoadNextScene()
-	{
-		SceneManager.LoadScene ("Aufgabe2", LoadSceneMode.Additive);
-	}
-
-	public void NextTask()
-	{	
-		SceneManager.UnloadScene ("Aufgabe1");
-		LoadNextScene();
-	}
 	}
 
