@@ -7,7 +7,8 @@ using UnityEngine.SceneManagement;
 public class nextScene : MonoBehaviour {
 
 	public bool finishedtask1;
-	public GameObject Kugel; 
+	public GameObject Kugel;
+	public GameObject Pfeil;
 	// Update is called once per frame
 	void Update () {
 
@@ -16,7 +17,7 @@ public class nextScene : MonoBehaviour {
 		
 		if (finishedtask1==true){
 			Debug.Log ("snapped");
-
+			Pfeil.SetActive(true);
 			Kugel.SetActive(true);
 
 		}
