@@ -12,7 +12,7 @@ public class Aufgabe2 : MonoBehaviour
     bool isSnappedCa;
     bool isSnappedAt;
     bool isSnappedAluMi;
-	bool task2finished;
+	public bool task2finished;
 
     Material m_Material;
 
@@ -58,7 +58,7 @@ public class Aufgabe2 : MonoBehaviour
         }
 
 		if (task2finished == true) {
-			ModeSelect ();
+			
 		}
 
     }
@@ -79,25 +79,7 @@ public class Aufgabe2 : MonoBehaviour
 	public void alkormizarsnapped(){
 		isSnappedAluMi = true;
 	}
-	public float delay = 2f;
-	public void ModeSelect(){
-		StartCoroutine ("Wait");
-	}
-	IEnumerator Wait(){
-		yield return new WaitForSeconds (10);
-		NextTask ();
-	}
 
-	public void LoadNextScene()
-	{
-		SceneManager.LoadScene ("Menu", LoadSceneMode.Additive);
-	}
-
-	public void NextTask()
-	{	
-		SceneManager.UnloadScene ("Aufgabe2");
-		LoadNextScene();
-	}
 }
 //}
 

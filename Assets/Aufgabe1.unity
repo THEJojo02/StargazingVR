@@ -1243,6 +1243,7 @@ MonoBehaviour:
   finishedtask1: 0
   Kugel: {fileID: 0}
   Pfeil: {fileID: 0}
+  sonne: {fileID: 0}
 --- !u!1 &364107595
 GameObject:
   m_ObjectHideFlags: 0
@@ -2193,6 +2194,7 @@ MonoBehaviour:
   finishedtask1: 0
   Kugel: {fileID: 332206632}
   Pfeil: {fileID: 1810584498}
+  sonne: {fileID: 665839622}
 --- !u!114 &665839653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3927,7 +3929,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
