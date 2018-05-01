@@ -18,7 +18,7 @@ public class FliegenOut : MonoBehaviour {
             rb.AddForce( 1 / 5 , 0, TheForce * Time.deltaTime); // DIE Macht wird angewendet
         }
         else if (time > 8) {
-            SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
+            SceneManager.LoadScene("Menu", LoadSceneMode.Single);
         }
         time = Time.deltaTime + time;
     }

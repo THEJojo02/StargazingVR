@@ -53,13 +53,10 @@ public class Aufgabe2 : MonoBehaviour
 
             m_Material.color = Color.green;
             //werden grün, wenn Sterne an richtiger Stelle
-			task2finished = true;
+
+            SceneManager.LoadScene("Win", LoadSceneMode.Additive);
 
         }
-
-		if (task2finished == true) {
-			
-		}
 
     }
 

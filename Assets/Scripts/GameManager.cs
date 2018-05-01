@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour {
     {
         if (time > 900)
         {
-         SceneManager.LoadScene("Outro", LoadSceneMode.Single);
+         SceneManager.LoadScene("Lose", LoadSceneMode.Additive);
         }
         time = (Time.deltaTime + time);
     }

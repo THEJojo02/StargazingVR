@@ -10,7 +10,6 @@ public class ScenenWechsel : MonoBehaviour {
         if (time > 30)
         {
             SceneManager.LoadScene("Intro",LoadSceneMode.Single);
-            
         }
         time = Time.deltaTime + time;	
 	}
