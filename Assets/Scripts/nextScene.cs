@@ -15,7 +15,9 @@ public class nextScene : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		finishedtask1 = sonne.GetComponent<Rotation> ().task1finished; 
+		if (sonne != null){
+		finishedtask1 = sonne.GetComponent<Rotation> ().task1finish; 
+		}
 	//	finishedtask2 = stern.GetComponent<Aufgabe2> ().task2finished; 
 		
 		if (finishedtask1==true){
