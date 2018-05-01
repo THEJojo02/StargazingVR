@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Fliegen : MonoBehaviour {
+public class FliegenOut : MonoBehaviour {
 
     public Rigidbody rb;
     public float TheForce = -150f;
@@ -9,13 +9,13 @@ public class Fliegen : MonoBehaviour {
 
     private void Start()
     {
-        rb.AddForce(250 , 0, -500);
+        rb.AddForce(-250 , 0, 500);
     }
     // Update is called once per frame
     void FixedUpdate()
     {
         if (time < 8) {
-            rb.AddForce(-1 * TheForce / 3 * Time.deltaTime, 0, TheForce * Time.deltaTime); // DIE Macht wird angewendet
+            rb.AddForce( 1 / 5 , 0, TheForce * Time.deltaTime); // DIE Macht wird angewendet
         }
         else if (time > 8) {
             SceneManager.LoadScene("MainScene", LoadSceneMode.Single);

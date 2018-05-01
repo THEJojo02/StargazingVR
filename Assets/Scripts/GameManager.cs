@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
-	public void LoadScenea()
+    public float time = 0 ;
+
+    public void LoadScenea()
 	{
 		SceneManager.LoadScene ("Aufgabe1", LoadSceneMode.Additive);
 	}
@@ -12,6 +14,15 @@ public class GameManager : MonoBehaviour {
 	void Start () {
 		LoadScenea ();
 	}
-	
+
+   void FixedUpdate()
+    {
+        if (time > 900)
+        {
+         SceneManager.LoadScene("Outro", LoadSceneMode.Single);
+        }
+        time = (Time.deltaTime + time);
+    }
+
 
 }
