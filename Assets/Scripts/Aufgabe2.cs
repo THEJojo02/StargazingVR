@@ -60,26 +60,31 @@ public class Aufgabe2 : MonoBehaviour
 
         if (isSnappedCa == true)
         {
-            Debug.Log("HI");
+          //  Debug.Log("HI");
         }
 
     }
 
 	public void denebsnapped(){
 		isSnappedDe = true;
+		Debug.Log("de");
 	}
 	public void vegasnapped(){
 		isSnappedVe = true;
+		Debug.Log("ve");
 	}
 	public void capellasnapped(){
 		isSnappedCa = true;
+		Debug.Log("ca");
 	}
 
 	public void atairsnapped(){
 		isSnappedAt = true;
+		Debug.Log("at");
 	}
 	public void alkormizarsnapped(){
 		isSnappedAluMi = true;
+		Debug.Log("al");
 	}
 
 }

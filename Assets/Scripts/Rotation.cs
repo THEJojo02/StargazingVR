@@ -33,80 +33,80 @@ public class Rotation : MonoBehaviour {
 	public bool task1finished;
 
 	void Update () {
-
-		/*GameObject snapso = GameObject.Find("SonneSnapZone");
-		isSnappedso = snapso.GetComponent<VRTK_SnapDropZone> ().isSnapped;
-
-		GameObject snapme = GameObject.Find("MerkurSnapZone");
-		isSnappedmerkur = snapme.GetComponent<VRTK_SnapDropZone> ().isSnapped;
-
-		GameObject snapv = GameObject.Find("VenusSnapZone");
-		isSnappedv = snapv.GetComponent<VRTK_SnapDropZone> ().isSnapped;
-
-		GameObject snape = GameObject.Find("ErdeSnapZone");
-		isSnappede = snape.GetComponent<VRTK_SnapDropZone> ().isSnapped;
-
-		GameObject snapma = GameObject.Find("MarsSnapZone");
-		isSnappedma = snapma.GetComponent<VRTK_SnapDropZone> ().isSnapped;
-
-		GameObject snapj = GameObject.Find("JupiterSnapZone");
-		isSnappedj = snapj.GetComponent<VRTK_SnapDropZone> ().isSnapped; 
-
-		GameObject snapu = GameObject.Find("UranusSnapZone");
-		isSnappedu = snapu.GetComponent<VRTK_SnapDropZone> ().isSnapped;
-
-		GameObject snaps = GameObject.Find("SaturnSnapZone");
-		isSnappeds = snaps.GetComponent<VRTK_SnapDropZone> ().isSnapped;
-
-		GameObject snapn = GameObject.Find("NeptunSnapZone");
-		isSnappedn = snapn.GetComponent<VRTK_SnapDropZone> ().isSnapped;//isSnapped(bool) aus dem Script der SnapDropZone*/
-
 		//prüfen, ob Planeten an richtiger Stelle
-
-
-
-		if (isSnappedmerkur == true && isSnappedv == true && isSnappede == true && isSnappedma == true && isSnappedj == true && isSnappeds == true &&
-		    isSnappedu == true && isSnappedn == true) {
-			
+		//rotieren, wenn Planet an richtiger Stelle
+		if (isSnappedmerkur == true) {
 			RotationPlaneten (); 
-			//rotieren, wenn Planet an richtiger Stelle
-	//	}
-		
-		
-		if(isSnappedso == true){
-
-			RotationSonne ();
-			task1finished = true;
-			Debug.Log ("snapped");
-			}}
 		}
+		if (isSnappedv == true) {
+			RotationPlaneten ();
+		}
+		if (isSnappede == true) {
+			RotationPlaneten ();
+		}
+		if (isSnappedma == true) {
+			RotationPlaneten (); 
+		}
+		if (isSnappedj == true) {
+			RotationPlaneten (); 
+		}
+		if (isSnappeds == true) {
+			RotationPlaneten (); 
+		}
+		if (isSnappedu == true) {
+			RotationPlaneten (); 
+		}
+		if (isSnappedn == true) {
+			RotationPlaneten (); 
+			Debug.Log ("neptun");
+		}
+		if (isSnappedmerkur == true && isSnappedv == true && isSnappede == true && isSnappedma == true && isSnappedj == true && isSnappeds == true &&
+		   isSnappedu == true) {
+			if (isSnappedso == true && isSnappedn == true) {
+				RotationSonne ();
+				task1finished = true;
+			
+			}
+
+		}
+	}
+
 
 	public void sonnesnapped(){
 		isSnappedso = true;
+		Debug.Log ("sonne");
 	}
 	public void merkursnapped(){
 		isSnappedmerkur = true;
+		Debug.Log ("merkur");
 	}
 	public void venussnapped(){
 		isSnappedv = true;
+		Debug.Log ("venus");
 	}
 	public void erdesnapped(){
 		isSnappede = true;
+		Debug.Log ("erde");
 	}
 	public void marssnapped(){
 		isSnappedma = true;
+		Debug.Log ("mars");
 	}
 	public void jupitersnapped(){
 		isSnappedj = true;
+		Debug.Log ("jupiter");
 	}
 	public void saturnsnapped(){
 		isSnappeds = true;
+		Debug.Log ("saturn");
 	}
 	public void uranussnapped(){
 		isSnappedu = true;
+		Debug.Log ("ura");
 	}
 	public void neptunsnapped(){
 		isSnappedn = true;
+		Debug.Log ("nept");
 	}
 		
 

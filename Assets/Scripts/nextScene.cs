@@ -16,18 +16,18 @@ public class nextScene : MonoBehaviour {
 	void Update () {
 
 		finishedtask1 = sonne.GetComponent<Rotation> ().task1finished; 
-		finishedtask2 = stern.GetComponent<Aufgabe2> ().task2finished; 
+	//	finishedtask2 = stern.GetComponent<Aufgabe2> ().task2finished; 
 		
 		if (finishedtask1==true){
-			Debug.Log ("snapped");
+			Debug.Log ("snappedfi");
 			Pfeil.SetActive(true);
 			Kugel.SetActive(true);
 		}
-		if (finishedtask2==true){
+	/*	if (finishedtask2==true){
 			Debug.Log ("snapped");
 			Pfeil.SetActive(true);
 			Kugel.SetActive(true);
-		}
+		}*/
 		
 	}
 
