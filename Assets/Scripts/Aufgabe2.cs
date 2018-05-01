@@ -58,6 +58,11 @@ public class Aufgabe2 : MonoBehaviour
 
         }
 
+        if (isSnappedCa == true)
+        {
+            Debug.Log("HI");
+        }
+
     }
 
 	public void denebsnapped(){

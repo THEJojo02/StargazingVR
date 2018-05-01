@@ -9,6 +9,6 @@ public class PositionRightHand : MonoBehaviour {
 	void Update () {
 		
 		positionright = transform.position;
-		Debug.Log (positionright);
+		
 	}
 }
