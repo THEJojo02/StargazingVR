@@ -35,7 +35,7 @@ public class nextScene : MonoBehaviour {
 
 	public void NextTask()
 	{	
-		SceneManager.UnloadScene ("Aufgabe1");
+		SceneManager.UnloadSceneAsync("Aufgabe1");
 		LoadNextScene();
 	}
 	public void LoadNextScene()

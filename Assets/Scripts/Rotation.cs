@@ -31,8 +31,9 @@ public class Rotation : MonoBehaviour {
 	bool isSnappedu;
 	bool isSnappedn;
 	public bool task1finish;
+	bool finish;
 
-	void Update () {
+	void FixedUpdate () {
 		//prüfen, ob Planeten an richtiger Stelle
 		//rotieren, wenn Planet an richtiger Stelle
 		if (isSnappedmerkur == true) {
@@ -58,6 +59,7 @@ public class Rotation : MonoBehaviour {
 		}
 		if (isSnappedn == true) {
 			RotationPlaneten (); 
+			task1finish = true;
 			Debug.Log ("neptun");
 		}
 		if ((isSnappedmerkur == true) && (isSnappedv == true) && (isSnappede == true) && (isSnappedma == true) && (isSnappedj == true) && (isSnappeds == true) &&
@@ -65,18 +67,24 @@ public class Rotation : MonoBehaviour {
 
 		}
 
-		if (isSnappedso == true){
-			if (isSnappedn == true){ 
-			task1finish = true;
-			RotationPlaneten ();
+		if (isSnappedso == true) {
+			RotationSonne ();
+			Debug.Log ("sun");
+			if (isSnappedn == true) { 
+				task1finish = true;
+				Debug.Log (task1finish);
+				Debug.Log ("hui");
+			} else {
+				Debug.Log ("wth?!");
 			}
 		}
-	}
+		}
+
 
 
 	public void sonnesnapped(){
 		isSnappedso = true;
-		Debug.Log ("sonne");
+		Debug.Log (isSnappedso);
 	}
 	public void merkursnapped(){
 		isSnappedmerkur = true;

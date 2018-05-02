@@ -2608,7 +2608,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bahn: {fileID: 1366755680}
   speed: 50
-  task1finished: 0
+  task1finish: 0
+  Kugel: {fileID: 332206632}
+  Pfeil: {fileID: 1810584498}
 --- !u!4 &665839675
 Transform:
   m_ObjectHideFlags: 0
@@ -2721,7 +2723,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bahn: {fileID: 1793464964}
   speed: 7
-  task1finished: 0
+  task1finish: 0
+  Kugel: {fileID: 0}
+  Pfeil: {fileID: 0}
 --- !u!23 &665839681
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2864,7 +2868,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bahn: {fileID: 55845044}
   speed: 20
-  task1finished: 0
+  task1finish: 0
+  Kugel: {fileID: 0}
+  Pfeil: {fileID: 0}
 --- !u!23 &665839688
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3226,7 +3232,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bahn: {fileID: 1036037501}
   speed: 10
-  task1finished: 0
+  task1finish: 0
+  Kugel: {fileID: 0}
+  Pfeil: {fileID: 0}
 --- !u!4 &665839715
 Transform:
   m_ObjectHideFlags: 0
@@ -3253,7 +3261,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bahn: {fileID: 173548700}
   speed: 15
-  task1finished: 0
+  task1finish: 0
+  Kugel: {fileID: 0}
+  Pfeil: {fileID: 0}
 --- !u!114 &665839717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3267,7 +3277,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bahn: {fileID: 1222869488}
   speed: 25
-  task1finished: 0
+  task1finish: 0
+  Kugel: {fileID: 0}
+  Pfeil: {fileID: 0}
 --- !u!114 &665839718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3281,7 +3293,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bahn: {fileID: 1497114720}
   speed: 35
-  task1finished: 0
+  task1finish: 0
+  Kugel: {fileID: 0}
+  Pfeil: {fileID: 0}
 --- !u!114 &665839719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3295,7 +3309,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bahn: {fileID: 1683999348}
   speed: 32
-  task1finished: 0
+  task1finish: 0
+  Kugel: {fileID: 0}
+  Pfeil: {fileID: 0}
 --- !u!114 &665839720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3309,7 +3325,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bahn: {fileID: 1886417350}
   speed: 42
-  task1finished: 0
+  task1finish: 0
+  Kugel: {fileID: 0}
+  Pfeil: {fileID: 0}
 --- !u!4 &665839721
 Transform:
   m_ObjectHideFlags: 0
