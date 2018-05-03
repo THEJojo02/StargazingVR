@@ -31,54 +31,62 @@ public class Rotation : MonoBehaviour {
 	bool isSnappedu;
 	bool isSnappedn;
 	public bool task1finish;
-	bool finish;
+	public bool finishn;
+	public bool finishsa;
+	public bool finishmer;
+	public bool finishmar;
+	public bool finisher;
+	public bool finishve;
+	public bool finishur;
+	public bool finishju;
 
-	void FixedUpdate () {
+
+
+	void Update () {
 		//prüfen, ob Planeten an richtiger Stelle
 		//rotieren, wenn Planet an richtiger Stelle
 		if (isSnappedmerkur == true) {
 			RotationPlaneten (); 
 		}
 		if (isSnappedv == true) {
+			finishve = true;
 			RotationPlaneten ();
 		}
 		if (isSnappede == true) {
+			finisher = true;
 			RotationPlaneten ();
 		}
 		if (isSnappedma == true) {
+			finishmar = true;
 			RotationPlaneten (); 
 		}
 		if (isSnappedj == true) {
+			finishju = true;
 			RotationPlaneten (); 
 		}
 		if (isSnappeds == true) {
+			finishsa = true;
 			RotationPlaneten (); 
 		}
 		if (isSnappedu == true) {
+			finishur = true;
 			RotationPlaneten (); 
 		}
 		if (isSnappedn == true) {
 			RotationPlaneten (); 
-			task1finish = true;
-			Debug.Log ("neptun");
+			finishn = true;
+			Debug.Log (finishn);
 		}
-		if ((isSnappedmerkur == true) && (isSnappedv == true) && (isSnappede == true) && (isSnappedma == true) && (isSnappedj == true) && (isSnappeds == true) &&
-			(isSnappedu == true)&& (isSnappedn == true)) {
 
-		}
+
+
 
 		if (isSnappedso == true) {
 			RotationSonne ();
-			Debug.Log ("sun");
-			if (isSnappedn == true) { 
-				task1finish = true;
-				Debug.Log (task1finish);
-				Debug.Log ("hui");
-			} else {
-				Debug.Log ("wth?!");
-			}
+			task1finish = true;
 		}
-		}
+
+}
 
 
 

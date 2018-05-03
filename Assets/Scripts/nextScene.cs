@@ -6,21 +6,61 @@ using UnityEngine.SceneManagement;
 
 public class nextScene : MonoBehaviour {
 
-	public bool finishedtask1;
-	public bool finishedtask2;
+	 bool finishedsonne;
+	 bool finishedneptun;
+	 bool finishedmerkur;
+	 bool finishedvenus;
+	 bool finishederde;
+	 bool finishedmars;
+	 bool finishedjupiter;
+	 bool finishedsaturn;
+	 bool finisheduranus;
 	public GameObject Kugel;
 	public GameObject Pfeil;
 	public GameObject sonne;
+	public GameObject neptun;
+	public GameObject merkur;
+	public GameObject venus;
+	public GameObject erde;
+	public GameObject mars;
+	public GameObject jupiter;
+	public GameObject saturn;
+	public GameObject uranus;
 	public GameObject stern;
 	// Update is called once per frame
 	void Update () {
 
 		if (sonne != null){
-		finishedtask1 = sonne.GetComponent<Rotation> ().task1finish; 
+			finishedsonne = sonne.GetComponent<Rotation> ().task1finish; 
 		}
-	//	finishedtask2 = stern.GetComponent<Aufgabe2> ().task2finished; 
+		if (neptun != null){
+			finishedneptun = neptun.GetComponent<Rotation> ().finishn;}
 		
-		if (finishedtask1==true){
+		if (merkur != null){
+			finishedmerkur = merkur.GetComponent<Rotation> ().finishmer;}
+		
+		if (venus != null){
+			finishedvenus = venus.GetComponent<Rotation> ().finishve;}
+		
+		if (erde != null){
+			finishederde = erde.GetComponent<Rotation> ().finisher;}
+		
+		if (mars != null){
+			finishedmars = mars.GetComponent<Rotation> ().finishmar;}
+		
+		if (jupiter != null){
+			finishedjupiter = jupiter.GetComponent<Rotation> ().finishju;}
+		
+		if (saturn != null){
+			finishedsaturn = saturn.GetComponent<Rotation> ().finishsa;}
+		
+		if (uranus != null){
+			finisheduranus = uranus.GetComponent<Rotation> ().finishur;}
+		
+		if ((finishedsonne==true) && (finishedneptun==true) && (finishedsaturn==true) && (finishedjupiter==true)
+			&& (finishedvenus==true) && (finishederde==true)
+			&& (finishedmars==true) && (finishedmerkur==true)  && (finisheduranus==true))
+		{
 			Debug.Log ("snappedfi");
 			Pfeil.SetActive(true);
 			Kugel.SetActive(true);
