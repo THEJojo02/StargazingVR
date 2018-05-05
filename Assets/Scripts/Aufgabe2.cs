@@ -58,11 +58,6 @@ public class Aufgabe2 : MonoBehaviour
 
         }
 
-        if (isSnappedCa == true)
-        {
-          //  Debug.Log("HI");
-        }
-
     }
 
 	public void denebsnapped(){
@@ -71,20 +66,20 @@ public class Aufgabe2 : MonoBehaviour
 	}
 	public void vegasnapped(){
 		isSnappedVe = true;
-		Debug.Log("ve");
+		//Debug.Log("ve");
 	}
 	public void capellasnapped(){
 		isSnappedCa = true;
-		Debug.Log("ca");
+		//Debug.Log("ca");
 	}
 
 	public void atairsnapped(){
 		isSnappedAt = true;
-		Debug.Log("at");
+		//Debug.Log("at");
 	}
 	public void alkormizarsnapped(){
 		isSnappedAluMi = true;
-		Debug.Log("al");
+		//Debug.Log("al");
 	}
 
 }

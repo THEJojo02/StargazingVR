@@ -18,10 +18,10 @@ public class Rotation : MonoBehaviour {
 
 	void RotationSonne(){
 
-		transform.RotateAround (Bahn.transform.position, Vector3.up, speed * Time.deltaTime); //Rotieren des Planeten
+		transform.RotateAround (Bahn.transform.position, Vector3.up, speed * Time.deltaTime); //Rotieren der Sonne
 	}
 
-	bool isSnappedso;
+	bool isSnappedso;   // Anlegen der Variablen für die Planeten
 	bool isSnappedmerkur;
 	bool isSnappedv;
 	bool isSnappede;
@@ -41,11 +41,52 @@ public class Rotation : MonoBehaviour {
 	public bool finishju;
 
 
+    // Funktionen werden aufgerufen wenn Planet richtig gesnappt ist, stezt Planeten-Variable auf true 
+    public void sonnesnapped()
+    {
+        isSnappedso = true;
+    }
+    public void merkursnapped()
+    {
+        isSnappedmerkur = true;
+    }
+    public void venussnapped()
+    {
+        isSnappedv = true;
+    }
+    public void erdesnapped()
+    {
+        isSnappede = true;
+    }
+    public void marssnapped()
+    {
+        isSnappedma = true;
+    }
+    public void jupitersnapped()
+    {
+        isSnappedj = true;
+    }
+    public void saturnsnapped()
+    {
+        isSnappeds = true;
+    }
+    public void uranussnapped()
+    {
+        isSnappedu = true;
+    }
+    public void neptunsnapped()
+    {
+        isSnappedn = true;
+    }
 
-	void Update () {
+
+
+    void Update () {
 		//prüfen, ob Planeten an richtiger Stelle
 		//rotieren, wenn Planet an richtiger Stelle
+        //Variablen finish.. auf true setzen
 		if (isSnappedmerkur == true) {
+            finishmer = true;
 			RotationPlaneten (); 
 		}
 		if (isSnappedv == true) {
@@ -75,59 +116,12 @@ public class Rotation : MonoBehaviour {
 		if (isSnappedn == true) {
 			RotationPlaneten (); 
 			finishn = true;
-			Debug.Log (finishn);
 		}
-
-
-
-
-		if (isSnappedso == true) {
+        if (isSnappedso == true) {
 			RotationSonne ();
 			task1finish = true;
 		}
 
-}
-
-
-
-	public void sonnesnapped(){
-		isSnappedso = true;
-		Debug.Log (isSnappedso);
-	}
-	public void merkursnapped(){
-		isSnappedmerkur = true;
-		Debug.Log ("merkur");
-	}
-	public void venussnapped(){
-		isSnappedv = true;
-		Debug.Log ("venus");
-	}
-	public void erdesnapped(){
-		isSnappede = true;
-		Debug.Log ("erde");
-	}
-	public void marssnapped(){
-		isSnappedma = true;
-		Debug.Log ("mars");
-	}
-	public void jupitersnapped(){
-		isSnappedj = true;
-		Debug.Log ("jupiter");
-	}
-	public void saturnsnapped(){
-		isSnappeds = true;
-		Debug.Log ("saturn");
-	}
-	public void uranussnapped(){
-		isSnappedu = true;
-		Debug.Log ("ura");
-	}
-	public void neptunsnapped(){
-		isSnappedn = true;
-		Debug.Log ("nept");
-	}
-		
-
-
+       }
 	}
 

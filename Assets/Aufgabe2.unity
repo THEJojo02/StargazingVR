@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414727, b: 0.121078536, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -3531,12 +3531,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c15089b10af9d5440b08432b7b64c881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finishedtask1: 0
-  finishedtask2: 0
   Kugel: {fileID: 0}
   Pfeil: {fileID: 0}
   sonne: {fileID: 0}
-  stern: {fileID: 0}
+  neptun: {fileID: 0}
+  merkur: {fileID: 0}
+  venus: {fileID: 0}
+  erde: {fileID: 0}
+  mars: {fileID: 0}
+  jupiter: {fileID: 0}
+  saturn: {fileID: 0}
+  uranus: {fileID: 0}
 --- !u!114 &2016752709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3554,14 +3559,14 @@ MonoBehaviour:
   ignoredColliders: []
   isGrabbable: 1
   holdButtonToGrab: 0
-  stayGrabbedOnTeleport: 1
+  stayGrabbedOnTeleport: 0
   validDrop: 1
   grabOverrideButton: 0
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 2016752710}
   secondaryGrabActionScript: {fileID: 2016752711}
-  isUsable: 0
-  holdButtonToUse: 1
+  isUsable: 1
+  holdButtonToUse: 0
   useOnlyIfGrabbed: 0
   pointerActivatesUseAction: 0
   useOverrideButton: 0
@@ -3633,7 +3638,7 @@ MonoBehaviour:
     OnValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2016752708}
+        - m_Target: {fileID: 0}
           m_MethodName: NextTask
           m_Mode: 1
           m_Arguments:
@@ -3683,23 +3688,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2016752715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2016752707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c15089b10af9d5440b08432b7b64c881, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  finishedtask1: 0
-  finishedtask2: 0
-  Kugel: {fileID: 0}
-  Pfeil: {fileID: 0}
-  sonne: {fileID: 0}
-  stern: {fileID: 1055941843}
 --- !u!1 &2040036658 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000010066341254, guid: 5d323709f0cbd454196647d9d8f2dd84,

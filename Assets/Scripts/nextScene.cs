@@ -26,10 +26,11 @@ public class nextScene : MonoBehaviour {
 	public GameObject jupiter;
 	public GameObject saturn;
 	public GameObject uranus;
-	public GameObject stern;
-	// Update is called once per frame
+
+	// Update wird einmal pro Bild geladen
 	void Update () {
 
+        //überprüft Planeten, wenn sie ungleich nichts sind wird geprüft ob sie gesnappt sind mit dem andren Skript
 		if (sonne != null){
 			finishedsonne = sonne.GetComponent<Rotation> ().task1finish; 
 		}
@@ -56,37 +57,30 @@ public class nextScene : MonoBehaviour {
 		
 		if (uranus != null){
 			finisheduranus = uranus.GetComponent<Rotation> ().finishur;}
-		
+
+
+		// wenn alle richtig gesnappt -> Aufgabe 1 gelöst
 		if ((finishedsonne==true) && (finishedneptun==true) && (finishedsaturn==true) && (finishedjupiter==true)
 			&& (finishedvenus==true) && (finishederde==true)
 			&& (finishedmars==true) && (finishedmerkur==true)  && (finisheduranus==true))
 		{
-			Debug.Log ("snappedfi");
+            // läd Button zum Scenenwechsel
 			Pfeil.SetActive(true);
 			Kugel.SetActive(true);
 		}
-	/*	if (finishedtask2==true){
-			Debug.Log ("snapped");
-			Pfeil.SetActive(true);
-			Kugel.SetActive(true);
-		}*/
 		
 	}
-
+     
+    // Entläd die 1.Aufgabe ruft andere Funktion auf
 	public void NextTask()
 	{	
 		SceneManager.UnloadSceneAsync("Aufgabe1");
 		LoadNextScene();
 	}
+    // läd die 2.Aufgabe wieder additive
 	public void LoadNextScene()
 	{
 		SceneManager.LoadScene ("Aufgabe2", LoadSceneMode.Additive);
-	}
-
-	public void LoadgoodOutro(){
-	}
-
-	public void LoadbadOutro(){
 	}
 
 

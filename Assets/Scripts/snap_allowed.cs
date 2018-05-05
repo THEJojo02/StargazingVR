@@ -38,17 +38,17 @@ public class snap_allowed : MonoBehaviour {
 			Distancele = Vector3.Distance (posleft, center);
 		
 			if (allowsnap == true){
-				Debug.Log (Distanceri);
-				Debug.Log (Distancele);
+				//Debug.Log (Distanceri);
+				//Debug.Log (Distancele);
 				if (objectisgrabbed == true && (Distancele < alloweddistance | Distanceri < alloweddistance)) {
 					GetComponent<VRTK_SnapDropZone>().enabled = false;
 					GetComponent<SphereCollider>().enabled = false;
-					Debug.Log ("no");
+					//Debug.Log ("no");
 				}
 				if (objectisgrabbed == true && (Distancele > alloweddistance | Distanceri > alloweddistance)) {
 					GetComponent<VRTK_SnapDropZone>().enabled = true;
 					GetComponent<SphereCollider>().enabled = true;
-					Debug.Log ("yes");
+					//Debug.Log ("yes");
 
 				}
 			}
