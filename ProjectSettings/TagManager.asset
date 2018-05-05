@@ -19,6 +19,9 @@ TagManager:
   - Atair
   - AluMi
   - Deneb
+  - Objektivspiegel
+  - "Sekund\xE4rspiegel"
+  - Linse
   layers:
   - Default
   - TransparentFX

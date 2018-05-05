@@ -38,7 +38,21 @@ public class GameManager : MonoBehaviour {
         }
         //Zeit hochzählen
         time = (Time.deltaTime + time);
+
+        // wenn die zeit mehr als 15 min ist...
+        if (time > 900)
+        {
+            SceneManager.UnloadSceneAsync("Aufgabe1");
+            Lose();
+        }
     }
 
-
+    // ...läd die Verlieren Szene
+    public void Lose()
+    {
+        SceneManager.LoadScene("Lose", LoadSceneMode.Additive);
+    }
 }
+
+
+
