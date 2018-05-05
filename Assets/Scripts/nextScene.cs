@@ -135,6 +135,9 @@ public class nextScene : MonoBehaviour {
 
         if ((finishedSp1 == true)&&(finishedSp2 == true )&& (finishedLi == true))
         {
+            Spiegel1.GetComponent<Aufgabe3>().mein_Material.color = Color.green;
+            Spiegel2.GetComponent<Aufgabe3>().mein_Material.color = Color.green;
+            Linse.GetComponent<Aufgabe3>().mein_Material.color = Color.green;
             NextTask();
             Aufgabe3 = true;
         }

@@ -11,6 +11,7 @@ public class Aufgabe3 : MonoBehaviour {
     public bool finishSp1;
     public bool finishSp2;
     public bool finishLi;
+    Material meinMaterial;
 
     public void Sp1snapped()
     {
@@ -25,6 +26,10 @@ public class Aufgabe3 : MonoBehaviour {
         isSnappedLi = true;
     }
 
+     void Start()
+    {
+        meinMaterial = GetComponent<Renderer>().material;
+    }
 
     void Update () {
 		if (isSnappedSp1 == true)
