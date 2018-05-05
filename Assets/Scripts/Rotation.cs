@@ -30,7 +30,7 @@ public class Rotation : MonoBehaviour {
 	bool isSnappeds;
 	bool isSnappedu;
 	bool isSnappedn;
-	public bool task1finish;
+	public bool finishsun;
 	public bool finishn;
 	public bool finishsa;
 	public bool finishmer;
@@ -119,7 +119,7 @@ public class Rotation : MonoBehaviour {
 		}
         if (isSnappedso == true) {
 			RotationSonne ();
-			task1finish = true;
+			finishsun = true;
 		}
 
        }

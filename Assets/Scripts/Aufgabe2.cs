@@ -5,84 +5,64 @@ using VRTK;
 using UnityEngine.SceneManagement;
 public class Aufgabe2 : MonoBehaviour
 {
-
-    public GameObject Platz;
     bool isSnappedDe;
     bool isSnappedVe;
     bool isSnappedCa;
     bool isSnappedAt;
     bool isSnappedAluMi;
-	public bool task2finished;
+    public bool finishAt;
+    public bool finishDe;
+    public bool finishVe;
+    public bool finishCa;
+    public bool finishAluMi;
+    public Material Stern_Material;
 
-    Material m_Material;
 
-    void Start()
+
+    public void denebsnapped()
     {
-        //Fetch the Material from the Renderer of the GameObject
-        m_Material = GetComponent<Renderer>().material;
-        print("Materials " + Resources.FindObjectsOfTypeAll(typeof(Material)).Length);
+        isSnappedDe = true;
+    }
+    public void vegasnapped()
+    {
+        isSnappedVe = true;
+    }
+    public void capellasnapped()
+    {
+        isSnappedCa = true;
     }
 
+    public void atairsnapped()
+    {
+        isSnappedAt = true;
+    }
+    public void alkormizarsnapped()
+    {
+        isSnappedAluMi = true;
+    }
+
+   void Start()
+    {
+        //Fetch the Material from the Renderer of the GameObject
+        Stern_Material = GetComponent<Renderer>().material;
+       // print("Materials " + Resources.FindObjectsOfTypeAll(typeof(Material)).Length);
+    }
 
     void Update()
     {
-
-        /*GameObject snapDe = GameObject.Find("DenebS");
-        isSnappedDe = snapDe.GetComponent<VRTK_SnapDropZone>().isSnapped;
-
-        GameObject snapVe = GameObject.Find("VegaS");
-        isSnappedVe = snapVe.GetComponent<VRTK_SnapDropZone>().isSnapped;
-
-        GameObject snapCa = GameObject.Find("CapellaS");
-        isSnappedCa = snapCa.GetComponent<VRTK_SnapDropZone>().isSnapped;
-
-        GameObject snapAt = GameObject.Find("AtairS");
-        isSnappedAt = snapAt.GetComponent<VRTK_SnapDropZone>().isSnapped;
-
-        GameObject snapAluMi = GameObject.Find("AluMiS");
-        isSnappedAluMi = snapAluMi.GetComponent<VRTK_SnapDropZone>().isSnapped;*/
-
-
-        //isSnapped(bool) aus dem Script der SnapDropZone
-
-        //prüfen, ob Planeten an richtiger Stelle
-
-
-        if (isSnappedDe == true && isSnappedVe == true && isSnappedCa == true && isSnappedAt == true && isSnappedAluMi == true)
-        {
-
-            m_Material.color = Color.green;
-            //werden grün, wenn Sterne an richtiger Stelle
-
-            SceneManager.LoadScene("Win", LoadSceneMode.Additive);
-
-        }
-
+        //prüfen, ob Planeten an richtiger Stelle gesnappt
+        if (isSnappedAt == true)
+        {finishAt = true;}
+        if (isSnappedDe == true)
+        { finishDe = true; }
+        if (isSnappedVe == true)
+        { finishVe = true; }
+        if (isSnappedAluMi == true)
+        { finishAluMi = true; }
+        if (isSnappedCa == true)
+        { finishCa = true; }
     }
-
-	public void denebsnapped(){
-		isSnappedDe = true;
-		Debug.Log("de");
-	}
-	public void vegasnapped(){
-		isSnappedVe = true;
-		//Debug.Log("ve");
-	}
-	public void capellasnapped(){
-		isSnappedCa = true;
-		//Debug.Log("ca");
-	}
-
-	public void atairsnapped(){
-		isSnappedAt = true;
-		//Debug.Log("at");
-	}
-	public void alkormizarsnapped(){
-		isSnappedAluMi = true;
-		//Debug.Log("al");
-	}
-
 }
-//}
+
 
 

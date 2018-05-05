@@ -711,8 +711,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a714a6dc4356e34db089596cfd41533, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Platz: {fileID: 2040036658}
-  task2finished: 0
+  finishAt: 0
+  finishDe: 0
+  finishVe: 0
+  finishCa: 0
+  finishAluMi: 0
+  Stern_Material: {fileID: 0}
 --- !u!1 &763339698
 GameObject:
   m_ObjectHideFlags: 0
@@ -1095,6 +1099,7 @@ GameObject:
   - component: {fileID: 1055941847}
   - component: {fileID: 1055941845}
   - component: {fileID: 1055941853}
+  - component: {fileID: 1055941854}
   m_Layer: 0
   m_Name: DenebBall
   m_TagString: Deneb
@@ -1277,8 +1282,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a714a6dc4356e34db089596cfd41533, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Platz: {fileID: 1815583601}
-  task2finished: 0
+  finishAt: 0
+  finishDe: 0
+  finishVe: 0
+  finishCa: 0
+  finishAluMi: 0
+  Stern_Material: {fileID: 0}
+--- !u!114 &1055941854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1055941843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c15089b10af9d5440b08432b7b64c881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Kugel: {fileID: 2016752707}
+  Pfeil: {fileID: 1930909244}
+  sonne: {fileID: 0}
+  neptun: {fileID: 0}
+  merkur: {fileID: 0}
+  venus: {fileID: 0}
+  erde: {fileID: 0}
+  mars: {fileID: 0}
+  jupiter: {fileID: 0}
+  saturn: {fileID: 0}
+  uranus: {fileID: 0}
+  Aufgabe1: 0
+  Deneb: {fileID: 1055941843}
+  Vega: {fileID: 1352158522}
+  Capella: {fileID: 1717927144}
+  Atair: {fileID: 1774146675}
+  AluMi: {fileID: 745033167}
+  Aufgabe2: 0
 --- !u!1 &1117561796
 GameObject:
   m_ObjectHideFlags: 0
@@ -1888,8 +1926,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a714a6dc4356e34db089596cfd41533, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Platz: {fileID: 391057591}
-  task2finished: 0
+  finishAt: 0
+  finishDe: 0
+  finishVe: 0
+  finishCa: 0
+  finishAluMi: 0
+  Stern_Material: {fileID: 0}
 --- !u!1 &1479838621
 GameObject:
   m_ObjectHideFlags: 0
@@ -2673,8 +2715,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a714a6dc4356e34db089596cfd41533, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Platz: {fileID: 1207170859}
-  task2finished: 0
+  finishAt: 0
+  finishDe: 0
+  finishVe: 0
+  finishCa: 0
+  finishAluMi: 0
+  Stern_Material: {fileID: 0}
 --- !u!1 &1739949826
 GameObject:
   m_ObjectHideFlags: 0
@@ -2959,8 +3005,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a714a6dc4356e34db089596cfd41533, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Platz: {fileID: 1500904918}
-  task2finished: 0
+  finishAt: 0
+  finishDe: 0
+  finishVe: 0
+  finishCa: 0
+  finishAluMi: 0
+  Stern_Material: {fileID: 0}
 --- !u!1 &1791758520
 GameObject:
   m_ObjectHideFlags: 0
@@ -3307,6 +3357,10 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1872519231}
   m_Mesh: {fileID: 4300000, guid: 0acff530ad85f534b9a117d00faf4027, type: 3}
+--- !u!1 &1930909244 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 6fd27f782a2ce50468a6563ccd4f80ad, type: 3}
+  m_PrefabInternal: {fileID: 726017184}
 --- !u!1 &1950699230
 GameObject:
   m_ObjectHideFlags: 0
@@ -3542,6 +3596,13 @@ MonoBehaviour:
   jupiter: {fileID: 0}
   saturn: {fileID: 0}
   uranus: {fileID: 0}
+  Aufgabe1: 0
+  Deneb: {fileID: 0}
+  Vega: {fileID: 0}
+  Capella: {fileID: 0}
+  Atair: {fileID: 0}
+  AluMi: {fileID: 0}
+  Aufgabe2: 0
 --- !u!114 &2016752709
 MonoBehaviour:
   m_ObjectHideFlags: 0
