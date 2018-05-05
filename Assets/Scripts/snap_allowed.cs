@@ -7,7 +7,7 @@ public class snap_allowed : MonoBehaviour {
 
 
 	Vector3 posleft;
-	Vector3 posright;
+	public Vector3 posright;
 	Vector3 center;
 	bool objectisgrabbed;
 	float Distanceri;

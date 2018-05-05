@@ -369,11 +369,11 @@ GameObject:
   - component: {fileID: 387098118}
   - component: {fileID: 387098120}
   - component: {fileID: 387098119}
+  - component: {fileID: 387098123}
   - component: {fileID: 387098121}
   - component: {fileID: 387098126}
   - component: {fileID: 387098125}
   - component: {fileID: 387098124}
-  - component: {fileID: 387098123}
   - component: {fileID: 387098122}
   - component: {fileID: 387098127}
   - component: {fileID: 387098128}
@@ -537,7 +537,7 @@ MonoBehaviour:
   holdButtonToGrab: 0
   stayGrabbedOnTeleport: 1
   validDrop: 1
-  grabOverrideButton: 0
+  grabOverrideButton: 7
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 387098125}
   secondaryGrabActionScript: {fileID: 387098124}
@@ -562,7 +562,7 @@ MonoBehaviour:
   finishSp1: 0
   finishSp2: 0
   finishLi: 0
-  mein_Material: {fileID: 0}
+  mMaterial: {fileID: 0}
 --- !u!114 &387098128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -819,13 +819,13 @@ GameObject:
   - component: {fileID: 792258728}
   - component: {fileID: 792258730}
   - component: {fileID: 792258729}
-  - component: {fileID: 792258736}
+  - component: {fileID: 792258732}
+  - component: {fileID: 792258737}
   - component: {fileID: 792258735}
   - component: {fileID: 792258734}
   - component: {fileID: 792258733}
-  - component: {fileID: 792258732}
   - component: {fileID: 792258731}
-  - component: {fileID: 792258737}
+  - component: {fileID: 792258736}
   m_Layer: 0
   m_Name: "Sekund\xE4rspiegel"
   m_TagString: Untagged
@@ -974,7 +974,7 @@ MonoBehaviour:
   holdButtonToGrab: 0
   stayGrabbedOnTeleport: 1
   validDrop: 1
-  grabOverrideButton: 0
+  grabOverrideButton: 7
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 792258734}
   secondaryGrabActionScript: {fileID: 792258733}
@@ -999,7 +999,7 @@ MonoBehaviour:
   finishSp1: 0
   finishSp2: 0
   finishLi: 0
-  mein_Material: {fileID: 0}
+  mMaterial: {fileID: 0}
 --- !u!65 &792258737
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1719,13 +1719,12 @@ GameObject:
   - component: {fileID: 1984046640}
   - component: {fileID: 1984046642}
   - component: {fileID: 1984046641}
-  - component: {fileID: 1984046648}
+  - component: {fileID: 1984046644}
+  - component: {fileID: 1984046649}
   - component: {fileID: 1984046647}
   - component: {fileID: 1984046646}
   - component: {fileID: 1984046645}
-  - component: {fileID: 1984046644}
-  - component: {fileID: 1984046643}
-  - component: {fileID: 1984046649}
+  - component: {fileID: 1984046648}
   m_Layer: 0
   m_Name: konvexe Linse
   m_TagString: Untagged
@@ -1789,29 +1788,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1984046639}
   m_Mesh: {fileID: 4300006, guid: a338c823a3c141d4180110e569833ece, type: 3}
---- !u!114 &1984046643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1984046639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc2315305343a584e8758755b54117c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clipOnTouch: {fileID: 0}
-  strengthOnTouch: 0
-  durationOnTouch: 0
-  intervalOnTouch: 0.05
-  clipOnGrab: {fileID: 0}
-  strengthOnGrab: 0
-  durationOnGrab: 0
-  intervalOnGrab: 0.05
-  clipOnUse: {fileID: 0}
-  strengthOnUse: 0
-  durationOnUse: 0
-  intervalOnUse: 0.05
 --- !u!54 &1984046644
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1874,7 +1850,7 @@ MonoBehaviour:
   holdButtonToGrab: 0
   stayGrabbedOnTeleport: 1
   validDrop: 1
-  grabOverrideButton: 0
+  grabOverrideButton: 7
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 1984046646}
   secondaryGrabActionScript: {fileID: 1984046645}
@@ -1899,7 +1875,7 @@ MonoBehaviour:
   finishSp1: 0
   finishSp2: 0
   finishLi: 0
-  mein_Material: {fileID: 0}
+  mMaterial: {fileID: 0}
 --- !u!65 &1984046649
 BoxCollider:
   m_ObjectHideFlags: 0

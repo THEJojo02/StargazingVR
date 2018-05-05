@@ -287,6 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f508524f3e46aa340b55258ed22dca47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  posright: {x: 0, y: 0, z: 0}
   alloweddistance: 1.08
   planet: {fileID: 665839619}
   allowsnap: 0
@@ -394,6 +395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f508524f3e46aa340b55258ed22dca47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  posright: {x: 0, y: 0, z: 0}
   alloweddistance: 1.11
   planet: {fileID: 665839617}
   allowsnap: 0
@@ -627,6 +629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f508524f3e46aa340b55258ed22dca47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  posright: {x: 0, y: 0, z: 0}
   alloweddistance: 1.745
   planet: {fileID: 665839613}
   allowsnap: 0
@@ -826,6 +829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f508524f3e46aa340b55258ed22dca47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  posright: {x: 0, y: 0, z: 0}
   alloweddistance: 1
   planet: {fileID: 665839621}
   allowsnap: 0
@@ -1036,7 +1040,6 @@ GameObject:
   - component: {fileID: 332206641}
   - component: {fileID: 332206640}
   - component: {fileID: 332206636}
-  - component: {fileID: 332206635}
   - component: {fileID: 332206637}
   - component: {fileID: 332206638}
   - component: {fileID: 332206639}
@@ -1060,17 +1063,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c15089b10af9d5440b08432b7b64c881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Kugel: {fileID: 0}
-  Pfeil: {fileID: 0}
-  sonne: {fileID: 0}
-  neptun: {fileID: 0}
-  merkur: {fileID: 0}
-  venus: {fileID: 0}
-  erde: {fileID: 0}
-  mars: {fileID: 0}
-  jupiter: {fileID: 0}
-  saturn: {fileID: 0}
-  uranus: {fileID: 0}
+  Kugel: {fileID: 332206632}
+  Pfeil: {fileID: 1810584498}
+  sonne: {fileID: 665839622}
+  neptun: {fileID: 665839613}
+  merkur: {fileID: 665839621}
+  venus: {fileID: 665839620}
+  erde: {fileID: 665839619}
+  mars: {fileID: 665839617}
+  jupiter: {fileID: 665839616}
+  saturn: {fileID: 665839615}
+  uranus: {fileID: 665839614}
   Aufgabe1: 0
   Deneb: {fileID: 0}
   Vega: {fileID: 0}
@@ -1078,6 +1081,10 @@ MonoBehaviour:
   Atair: {fileID: 0}
   AluMi: {fileID: 0}
   Aufgabe2: 0
+  Spiegel1: {fileID: 0}
+  Spiegel2: {fileID: 0}
+  Linse: {fileID: 0}
+  Aufgabe3: 0
 --- !u!114 &332206634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1128,29 +1135,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
---- !u!114 &332206635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 332206632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc2315305343a584e8758755b54117c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clipOnTouch: {fileID: 0}
-  strengthOnTouch: 0
-  durationOnTouch: 0
-  intervalOnTouch: 0.05
-  clipOnGrab: {fileID: 0}
-  strengthOnGrab: 0
-  durationOnGrab: 0
-  intervalOnGrab: 0.05
-  clipOnUse: {fileID: 0}
-  strengthOnUse: 0
-  durationOnUse: 0
-  intervalOnUse: 0.05
 --- !u!54 &332206636
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1213,7 +1197,7 @@ MonoBehaviour:
   holdButtonToGrab: 0
   stayGrabbedOnTeleport: 0
   validDrop: 1
-  grabOverrideButton: 3
+  grabOverrideButton: 0
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 332206638}
   secondaryGrabActionScript: {fileID: 332206637}
@@ -2245,6 +2229,10 @@ MonoBehaviour:
   Atair: {fileID: 0}
   AluMi: {fileID: 0}
   Aufgabe2: 0
+  Spiegel1: {fileID: 0}
+  Spiegel2: {fileID: 0}
+  Linse: {fileID: 0}
+  Aufgabe3: 0
 --- !u!114 &665839653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3756,6 +3744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f508524f3e46aa340b55258ed22dca47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  posright: {x: 0, y: 0, z: 0}
   alloweddistance: 1.3
   planet: {fileID: 665839615}
   allowsnap: 0
@@ -4702,6 +4691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f508524f3e46aa340b55258ed22dca47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  posright: {x: 0, y: 0, z: 0}
   alloweddistance: 1.15
   planet: {fileID: 665839616}
   allowsnap: 0
@@ -5676,6 +5666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f508524f3e46aa340b55258ed22dca47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  posright: {x: 0, y: 0, z: 0}
   alloweddistance: 0
   planet: {fileID: 665839622}
   allowsnap: 0
@@ -6347,6 +6338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f508524f3e46aa340b55258ed22dca47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  posright: {x: 0, y: 0, z: 0}
   alloweddistance: 1.06
   planet: {fileID: 665839620}
   allowsnap: 0
@@ -6575,6 +6567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f508524f3e46aa340b55258ed22dca47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  posright: {x: 0, y: 0, z: 0}
   alloweddistance: 1.54
   planet: {fileID: 665839614}
   allowsnap: 0

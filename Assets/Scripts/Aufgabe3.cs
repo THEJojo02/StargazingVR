@@ -5,13 +5,14 @@ using VRTK;
 using UnityEngine.SceneManagement;
 
 public class Aufgabe3 : MonoBehaviour {
+
     bool isSnappedSp1;
     bool isSnappedSp2;
     bool isSnappedLi;
     public bool finishSp1;
     public bool finishSp2;
     public bool finishLi;
-    public Material mein_Material;
+    public Material mMaterial;
 
     public void Sp1snapped()
     {
@@ -24,11 +25,12 @@ public class Aufgabe3 : MonoBehaviour {
     public void Lisnapped()
     {
         isSnappedLi = true;
+        Debug.Log("Hui");
     }
 
      void Start()
     {
-        mein_Material = GetComponent<Renderer>().material;
+        mMaterial = GetComponent<Renderer>().material;
     }
 
     void Update () {
@@ -37,6 +39,8 @@ public class Aufgabe3 : MonoBehaviour {
         if (isSnappedSp2 == true)
         { finishSp2 = true; }
         if (isSnappedLi == true)
-        { finishLi = true; }
+        { finishLi = true;
+            Debug.Log("Hui");
+        }
     }
 }

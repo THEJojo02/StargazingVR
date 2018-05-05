@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Aufgabe2.unity
     guid: 162f4f6e52765fc44a10feb311854f5c
   - enabled: 1
+    path: Assets/Aufgabe3.unity
+    guid: 592e32593c6850d48b47923983e25fc2
+  - enabled: 1
     path: Assets/Outro.unity
     guid: aabf84a2ca47e4e4aad68cd1c12f48aa
   - enabled: 1

@@ -133,13 +133,13 @@ public class nextScene : MonoBehaviour {
         if (Spiegel1 != null)
         { finishedLi = Linse.GetComponent<Aufgabe3>().finishLi; }
 
-        if ((finishedSp1 == true)&&(finishedSp2 == true )&& (finishedLi == true))
+        if ((finishedSp1 == true) && (finishedSp2 == true ) && (finishedLi == true))
         {
-            Spiegel1.GetComponent<Aufgabe3>().mein_Material.color = Color.green;
-            Spiegel2.GetComponent<Aufgabe3>().mein_Material.color = Color.green;
-            Linse.GetComponent<Aufgabe3>().mein_Material.color = Color.green;
-            NextTask();
+            Spiegel1.GetComponent<Aufgabe3>().mMaterial.color = Color.green;
+            Spiegel2.GetComponent<Aufgabe3>().mMaterial.color = Color.green;
+            Linse.GetComponent<Aufgabe3>().mMaterial.color = Color.green;
             Aufgabe3 = true;
+            NextTask();
         }
     }
 
@@ -149,14 +149,17 @@ public class nextScene : MonoBehaviour {
     // Entläd die 1.Aufgabe,2.Aufgabe oder 3.Aufgabe und ruft die andere Funktion auf
     public void NextTask()
     {
-        if (Aufgabe1 == true) {
+        if  (Aufgabe1 == true)
+        {
             SceneManager.UnloadSceneAsync("Aufgabe1");
             LoadNextScene();
+           
         } else if (Aufgabe2 == true)
         {
             SceneManager.UnloadSceneAsync("Aufgabe2");
             LoadNextScene();
-        }else if (Aufgabe3 == true)
+        }
+        else if (Aufgabe3 == true)
         {
             SceneManager.UnloadSceneAsync("Aufgabe3");
             LoadNextScene();
@@ -172,6 +175,7 @@ public class nextScene : MonoBehaviour {
         else if (Aufgabe2 == true)
         {
             SceneManager.LoadScene("Aufgabe3", LoadSceneMode.Additive);
+            Debug.Log("Hui");
         }
         else if (Aufgabe3 == true)
         {
