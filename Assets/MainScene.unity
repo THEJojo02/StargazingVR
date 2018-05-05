@@ -8536,11 +8536,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 8be5836977b1ca04f81d7ac1c0c88aa2, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 8be5836977b1ca04f81d7ac1c0c88aa2, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 8be5836977b1ca04f81d7ac1c0c88aa2, type: 3}
       propertyPath: m_LocalPosition.z
