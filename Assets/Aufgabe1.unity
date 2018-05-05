@@ -1071,6 +1071,13 @@ MonoBehaviour:
   jupiter: {fileID: 0}
   saturn: {fileID: 0}
   uranus: {fileID: 0}
+  Aufgabe1: 0
+  Deneb: {fileID: 0}
+  Vega: {fileID: 0}
+  Capella: {fileID: 0}
+  Atair: {fileID: 0}
+  AluMi: {fileID: 0}
+  Aufgabe2: 0
 --- !u!114 &332206634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2231,6 +2238,13 @@ MonoBehaviour:
   jupiter: {fileID: 665839616}
   saturn: {fileID: 665839615}
   uranus: {fileID: 665839614}
+  Aufgabe1: 0
+  Deneb: {fileID: 0}
+  Vega: {fileID: 0}
+  Capella: {fileID: 0}
+  Atair: {fileID: 0}
+  AluMi: {fileID: 0}
+  Aufgabe2: 0
 --- !u!114 &665839653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2640,7 +2654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bahn: {fileID: 1366755680}
   speed: 50
-  task1finish: 0
+  finishsun: 0
   finishn: 0
   finishsa: 0
   finishmer: 0
@@ -2761,7 +2775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bahn: {fileID: 1793464964}
   speed: 7
-  task1finish: 0
+  finishsun: 0
   finishn: 0
   finishsa: 0
   finishmer: 0
@@ -2912,7 +2926,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bahn: {fileID: 55845044}
   speed: 20
-  task1finish: 0
+  finishsun: 0
   finishn: 0
   finishsa: 0
   finishmer: 0
@@ -3281,8 +3295,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bahn: {fileID: 1036037501}
-  speed: 10
-  task1finish: 0
+  speed: -10
+  finishsun: 0
   finishn: 0
   finishsa: 0
   finishmer: 0
@@ -3317,7 +3331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bahn: {fileID: 173548700}
   speed: 15
-  task1finish: 0
+  finishsun: 0
   finishn: 0
   finishsa: 0
   finishmer: 0
@@ -3339,7 +3353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bahn: {fileID: 1222869488}
   speed: 25
-  task1finish: 0
+  finishsun: 0
   finishn: 0
   finishsa: 0
   finishmer: 0
@@ -3361,7 +3375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bahn: {fileID: 1497114720}
   speed: 35
-  task1finish: 0
+  finishsun: 0
   finishn: 0
   finishsa: 0
   finishmer: 0
@@ -3383,7 +3397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bahn: {fileID: 1683999348}
   speed: 32
-  task1finish: 0
+  finishsun: 0
   finishn: 0
   finishsa: 0
   finishmer: 0
@@ -3405,7 +3419,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bahn: {fileID: 1886417350}
   speed: 42
-  task1finish: 0
+  finishsun: 0
   finishn: 0
   finishsa: 0
   finishmer: 0
