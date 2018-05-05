@@ -43,9 +43,8 @@ public class Aufgabe2 : MonoBehaviour
 
    void Start()
     {
-        //Fetch the Material from the Renderer of the GameObject
+        //Material von Stern ansprechen und einer Variable zuweisen
         Stern_Material = GetComponent<Renderer>().material;
-       // print("Materials " + Resources.FindObjectsOfTypeAll(typeof(Material)).Length);
     }
 
     void Update()
