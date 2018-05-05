@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour {
     // Variablen
     public float time = 0 ;
-    public TextMesh textObject = GameObject.Find("").GetComponent<TextMesh>();
+	public TextMesh textObject;// = GetComponent<TextMesh>();
     float min = 0;
     float sek = 0;
     float x;
@@ -21,13 +21,13 @@ public class GameManager : MonoBehaviour {
 
     void FixedUpdate()
     {
-        //aus Sekunden Minuten machen
+        //Sekunden in Minuten umrechnen
         min = Mathf.Floor(time / 60);
-        // von gesamter Zeit nur die Sekunden der angefangen Minute herausrechen (mit hilfe von Modulo)
+        // von gesamter Zeit nur die Sekunden der angefangen Minute herausrechen (mithilfe von Modulo)
         sek = Mathf.Round(60 - (time % 60));
         x = 14 - min;
         // Ausgabe auf 3D Textfeld
-        // wenn kleiner als 10 dann = davor schreiben
+        // wenn kleiner als 10 dann 0 davor schreiben
         if (sek < 10)
         { textObject.text = x.ToString() + ":0" + sek.ToString(); }
         else

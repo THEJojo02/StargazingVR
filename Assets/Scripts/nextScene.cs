@@ -55,7 +55,7 @@ public class nextScene : MonoBehaviour {
     void Update() {
 
         //Aufgabe 1
-        //überprüft Planeten, wenn sie ungleich nichts sind wird geprüft ob sie gesnappt sind mit dem andren Skript
+		//überprüft Planeten, wenn sie ungleich nichts sind, wird mit dem anderen Skript geprüft ob sie gesnappt sind 
         if (sonne != null) {
             finishedsonne = sonne.GetComponent<Rotation>().finishsun;
         }
@@ -89,14 +89,14 @@ public class nextScene : MonoBehaviour {
             && (finishedvenus == true) && (finishederde == true)
             && (finishedmars == true) && (finishedmerkur == true) && (finisheduranus == true))
         {
-            // läd Button zum Scenenwechsel
+            // lädt Button zum Szenenwechsel
             Pfeil.SetActive(true);
             Kugel.SetActive(true);
             Aufgabe1 = true;
         }
 
         // Aufgabe 2
-        //überprüft Sterne, wenn sie ungleich nichts sind wird geprüft ob sie gesnappt sind mit dem andren Skript
+        //überprüft Sterne, wenn sie ungleich nichts sind, wird geprüft ob sie gesnappt sind mit dem andren Skript
         if (Deneb != null)
         { finishedDeneb = Deneb.GetComponent<Aufgabe2>().finishDe; }
         if (Vega != null)
@@ -112,10 +112,10 @@ public class nextScene : MonoBehaviour {
         if ((finishedAtair == true) && (finishedCapella == true) && (finishedAluMi == true)
             && (finishedDeneb == true) && (finishedVega == true))
         {
-            // läd Button zum Scenenwechsel
+            // lädt Button zum Szenenwechsel
             Pfeil.SetActive(true);
             Kugel.SetActive(true);
-            //werden grün, wenn Sterne an richtiger Stelle
+			//Sterne werden grün, wenn sie an richtiger Stelle sind
             Deneb.GetComponent<Aufgabe2>().Stern_Material.color = Color.green;
             Vega.GetComponent<Aufgabe2>().Stern_Material.color = Color.green;
             Capella.GetComponent<Aufgabe2>().Stern_Material.color = Color.green;
@@ -133,6 +133,13 @@ public class nextScene : MonoBehaviour {
         if (Spiegel1 != null)
         { finishedLi = Linse.GetComponent<Aufgabe3>().finishLi; }
 
+		/*if ((finishedSp1 == true) && (finishedLi == true))
+		{
+			Debug.Log ("Sp1ihj");
+			Spiegel1.GetComponent<Aufgabe3>().mMaterial.color = Color.green;
+			Linse.GetComponent<Aufgabe3>().mMaterial.color = Color.green;
+		}*/
+
         if ((finishedSp1 == true) && (finishedSp2 == true ) && (finishedLi == true))
         {
             Spiegel1.GetComponent<Aufgabe3>().mMaterial.color = Color.green;
@@ -144,9 +151,9 @@ public class nextScene : MonoBehaviour {
     }
 
 
-    // für Scenenwechsel
+    // für Szenenwechsel
 
-    // Entläd die 1.Aufgabe,2.Aufgabe oder 3.Aufgabe und ruft die andere Funktion auf
+    // Entlädt die 1.Aufgabe,2.Aufgabe oder 3.Aufgabe und ruft die andere Funktion auf
     public void NextTask()
     {
         if  (Aufgabe1 == true)
@@ -165,7 +172,7 @@ public class nextScene : MonoBehaviour {
             LoadNextScene();
         }
     }
-    // läd die 2.Aufgabe,3.Aufgabe oder den Schluss wieder additive
+    // lädt die 2.Aufgabe,3.Aufgabe oder den Schluss wieder additiv
     public void LoadNextScene()
     {
         if (Aufgabe1 == true)

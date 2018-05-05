@@ -41,7 +41,7 @@ public class Rotation : MonoBehaviour {
 	public bool finishju;
 
 
-    // Funktionen werden aufgerufen wenn Planet richtig gesnappt ist, stezt Planeten-Variable auf true 
+    // Funktionen werden aufgerufen wenn Planet richtig gesnappt ist, setzt Planeten-Variable auf true 
     public void sonnesnapped()
     {
         isSnappedso = true;

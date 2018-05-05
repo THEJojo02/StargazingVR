@@ -22,6 +22,9 @@ TagManager:
   - Objektivspiegel
   - "Sekund\xE4rspiegel"
   - Linse
+  - Saucers
+  - Sp1
+  - Sp2
   layers:
   - Default
   - TransparentFX

@@ -19,36 +19,33 @@ public class snap_allowed : MonoBehaviour {
 	public void distance(){
 
 		allowsnap = true;
-
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
+		//Controller finden und deren Position einer Variable zuweisen
 		GameObject left = GameObject.Find ("LeftController");
 		posleft = left.GetComponent<PositionLeftHand> ().positionleft;
 
 		GameObject right = GameObject.Find ("RightController");
 		posright = right.GetComponent<PositionRightHand> ().positionright;
 
+		//prüfen, ob ein Planet gegriffen ist
 		var planetgrabbed = planet.GetComponentInParent<VRTK_InteractableObject> ();
 		objectisgrabbed = planetgrabbed.IsGrabbed ();
 
+		//ausrechnen der Distanz
 		if (objectisgrabbed == true) {
 			Distanceri = Vector3.Distance (posright, center);
 			Distancele = Vector3.Distance (posleft, center);
-		
+		//SnapDropZone aktiv/deaktiv setzen
 			if (allowsnap == true){
-				//Debug.Log (Distanceri);
-				//Debug.Log (Distancele);
 				if (objectisgrabbed == true && (Distancele < alloweddistance | Distanceri < alloweddistance)) {
 					GetComponent<VRTK_SnapDropZone>().enabled = false;
 					GetComponent<SphereCollider>().enabled = false;
-					//Debug.Log ("no");
 				}
 				if (objectisgrabbed == true && (Distancele > alloweddistance | Distanceri > alloweddistance)) {
 					GetComponent<VRTK_SnapDropZone>().enabled = true;
 					GetComponent<SphereCollider>().enabled = true;
-					//Debug.Log ("yes");
 
 				}
 			}

@@ -21,11 +21,11 @@ public class Aufgabe3 : MonoBehaviour {
     public void Sp2snapped()
     {
         isSnappedSp2 = true;
+
     }
     public void Lisnapped()
     {
         isSnappedLi = true;
-        Debug.Log("Hui");
     }
 
      void Start()
@@ -39,8 +39,6 @@ public class Aufgabe3 : MonoBehaviour {
         if (isSnappedSp2 == true)
         { finishSp2 = true; }
         if (isSnappedLi == true)
-        { finishLi = true;
-            Debug.Log("Hui");
-        }
+        { finishLi = true;  }
     }
 }

@@ -17,8 +17,7 @@ public class Aufgabe2 : MonoBehaviour
     public bool finishAluMi;
     public Material Stern_Material;
 
-
-
+	//setzt Sternen-Bool auf true, wenn gesnappt
     public void denebsnapped()
     {
         isSnappedDe = true;
@@ -49,7 +48,7 @@ public class Aufgabe2 : MonoBehaviour
 
     void Update()
     {
-        //prüfen, ob Planeten an richtiger Stelle gesnappt
+        //prüfen, ob Stern an richtiger Stelle gesnappt
         if (isSnappedAt == true)
         {finishAt = true;}
         if (isSnappedDe == true)

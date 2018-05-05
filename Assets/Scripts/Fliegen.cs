@@ -11,7 +11,7 @@ public class Fliegen : MonoBehaviour {
     {
         rb.AddForce(250 , 0, -500);
     }
-    // Update is called once per frame
+
     void FixedUpdate()
     {
         if (time < 8) {
