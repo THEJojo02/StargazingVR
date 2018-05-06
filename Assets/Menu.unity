@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0042322576, g: 0.0040462865, b: 0.004380102, a: 1}
+  m_IndirectSpecularColor: {r: 0.0043115653, g: 0.004038755, b: 0.004460781, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -153,11 +153,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 0f2772c3843937a439556e02b14f1508, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.671
+      value: -1.593
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0f2772c3843937a439556e02b14f1508, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.087
+      value: 1.125
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0f2772c3843937a439556e02b14f1508, type: 3}
       propertyPath: m_LocalPosition.z
@@ -323,7 +323,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.10000002, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -1.57, y: 1.087, z: 0.43899995}
+  m_ConnectedAnchor: {x: -1.671, y: 1.087, z: 0.43899995}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -989,7 +989,7 @@ Prefab:
     - target: {fileID: 224000012623161658, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 248
+      value: 290
       objectReference: {fileID: 0}
     - target: {fileID: 224000012623161658, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3,
         type: 2}
@@ -2509,7 +2509,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.10000002, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -1.661, y: 1.125, z: -0.708}
+  m_ConnectedAnchor: {x: -1.593, y: 1.125, z: -0.708}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
