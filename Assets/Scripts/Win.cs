@@ -2,15 +2,21 @@
 using UnityEngine.SceneManagement;
 
 public class Win : MonoBehaviour {
+    float time;
 
     public void Outro()
     {
         SceneManager.LoadScene("Outro", LoadSceneMode.Single);
     }
 
-    void Start()
+
+     void Update()
     {
-        Outro();
+        time = Time.deltaTime + time;
+        if (time > 20)
+        {
+            Outro();
+        }
     }
 
 }
