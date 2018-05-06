@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 94107820}
   - component: {fileID: 94107822}
   - component: {fileID: 94107821}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Uranusring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -522,6 +522,10 @@ Prefab:
       propertyPath: snapDuration
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010066341254, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
   m_IsPrefabParent: 0
@@ -647,7 +651,7 @@ GameObject:
   - component: {fileID: 194518988}
   - component: {fileID: 194518990}
   - component: {fileID: 194518989}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: EditorHighlightObject
   m_TagString: Saturn
   m_Icon: {fileID: 0}
@@ -846,7 +850,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 290402195}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: HighlightContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -876,7 +880,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 295797102}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: HighlightContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1025,6 +1029,10 @@ Prefab:
         type: 2}
       propertyPath: snapDuration
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010066341254, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
@@ -1272,7 +1280,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 364107596}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: HighlightContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1304,7 +1312,7 @@ GameObject:
   - component: {fileID: 533666550}
   - component: {fileID: 533666552}
   - component: {fileID: 533666551}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Saturnring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1410,7 +1418,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 646331064}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: HighlightContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1442,7 +1450,7 @@ GameObject:
   - component: {fileID: 655909803}
   - component: {fileID: 655909805}
   - component: {fileID: 655909804}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: EditorHighlightObject
   m_TagString: Sonne
   m_Icon: {fileID: 0}
@@ -3440,7 +3448,7 @@ GameObject:
   - component: {fileID: 755065862}
   - component: {fileID: 755065864}
   - component: {fileID: 755065863}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: EditorHighlightObject
   m_TagString: Merkur
   m_Icon: {fileID: 0}
@@ -3584,7 +3592,7 @@ GameObject:
   - component: {fileID: 902895531}
   - component: {fileID: 902895533}
   - component: {fileID: 902895532}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: HighlightObject
   m_TagString: Merkur
   m_Icon: {fileID: 0}
@@ -3856,6 +3864,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010066341254, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114000012880271118, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
@@ -3939,7 +3951,7 @@ GameObject:
   - component: {fileID: 1078370384}
   - component: {fileID: 1078370386}
   - component: {fileID: 1078370385}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: HighlightObject
   m_TagString: Neptun
   m_Icon: {fileID: 0}
@@ -4008,7 +4020,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1108873439}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: HighlightContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4040,7 +4052,7 @@ GameObject:
   - component: {fileID: 1110236615}
   - component: {fileID: 1110236617}
   - component: {fileID: 1110236616}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: HighlightObject
   m_TagString: Jupiter
   m_Icon: {fileID: 0}
@@ -4109,7 +4121,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1135540977}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: HighlightContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4139,7 +4151,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1163561440}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: HighlightContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4169,7 +4181,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1170694444}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: HighlightContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4205,7 +4217,7 @@ GameObject:
   - component: {fileID: 1233910622}
   - component: {fileID: 1233910624}
   - component: {fileID: 1233910623}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: HighlightObject
   m_TagString: Sonne
   m_Icon: {fileID: 0}
@@ -4276,7 +4288,7 @@ GameObject:
   - component: {fileID: 1337405623}
   - component: {fileID: 1337405625}
   - component: {fileID: 1337405624}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: HighlightObject
   m_TagString: Uranus
   m_Icon: {fileID: 0}
@@ -4451,6 +4463,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.x
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d998a6cc168dfe14f9db10d007b4e918, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d998a6cc168dfe14f9db10d007b4e918, type: 3}
   m_IsPrefabParent: 0
@@ -4584,6 +4600,10 @@ Prefab:
       propertyPath: snapDuration
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010066341254, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
   m_IsPrefabParent: 0
@@ -4705,7 +4725,7 @@ GameObject:
   - component: {fileID: 1386977068}
   - component: {fileID: 1386977070}
   - component: {fileID: 1386977069}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: EditorHighlightObject
   m_TagString: Erde
   m_Icon: {fileID: 0}
@@ -4776,7 +4796,7 @@ GameObject:
   - component: {fileID: 1491981041}
   - component: {fileID: 1491981043}
   - component: {fileID: 1491981042}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: EditorHighlightObject
   m_TagString: Mars
   m_Icon: {fileID: 0}
@@ -4851,7 +4871,7 @@ GameObject:
   - component: {fileID: 1510777558}
   - component: {fileID: 1510777560}
   - component: {fileID: 1510777559}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: EditorHighlightObject
   m_TagString: Jupiter
   m_Icon: {fileID: 0}
@@ -5029,6 +5049,10 @@ Prefab:
         type: 2}
       propertyPath: snapDuration
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010066341254, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
@@ -5344,6 +5368,42 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.54278666
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 54db15720fef36a4c92c10b70ca8af0e, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 54db15720fef36a4c92c10b70ca8af0e, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 54db15720fef36a4c92c10b70ca8af0e, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 54db15720fef36a4c92c10b70ca8af0e, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 54db15720fef36a4c92c10b70ca8af0e, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 54db15720fef36a4c92c10b70ca8af0e, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 54db15720fef36a4c92c10b70ca8af0e, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 54db15720fef36a4c92c10b70ca8af0e, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 54db15720fef36a4c92c10b70ca8af0e, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54db15720fef36a4c92c10b70ca8af0e, type: 3}
   m_IsPrefabParent: 0
@@ -5397,7 +5457,7 @@ GameObject:
   - component: {fileID: 1684518365}
   - component: {fileID: 1684518367}
   - component: {fileID: 1684518366}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: HighlightObject
   m_TagString: Erde
   m_Icon: {fileID: 0}
@@ -5541,7 +5601,7 @@ GameObject:
   - component: {fileID: 1732827443}
   - component: {fileID: 1732827445}
   - component: {fileID: 1732827444}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: HighlightObject
   m_TagString: Mars
   m_Icon: {fileID: 0}
@@ -5618,7 +5678,7 @@ GameObject:
   - component: {fileID: 1745051103}
   - component: {fileID: 1745051108}
   - component: {fileID: 1745051104}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SonneSnapZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5805,7 +5865,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1825650938}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: HighlightContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5837,7 +5897,7 @@ GameObject:
   - component: {fileID: 1861178755}
   - component: {fileID: 1861178757}
   - component: {fileID: 1861178756}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Uranusring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5912,7 +5972,7 @@ GameObject:
   - component: {fileID: 1904900634}
   - component: {fileID: 1904900636}
   - component: {fileID: 1904900635}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: EditorHighlightObject
   m_TagString: Venus
   m_Icon: {fileID: 0}
@@ -5983,7 +6043,7 @@ GameObject:
   - component: {fileID: 1946100002}
   - component: {fileID: 1946100004}
   - component: {fileID: 1946100003}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: EditorHighlightObject
   m_TagString: Uranus
   m_Icon: {fileID: 0}
@@ -6055,7 +6115,7 @@ GameObject:
   - component: {fileID: 1994270194}
   - component: {fileID: 1994270196}
   - component: {fileID: 1994270195}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: HighlightObject
   m_TagString: Saturn
   m_Icon: {fileID: 0}
@@ -6230,6 +6290,10 @@ Prefab:
         type: 2}
       propertyPath: snapDuration
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010066341254, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
@@ -6460,6 +6524,10 @@ Prefab:
       propertyPath: snapDuration
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010066341254, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
   m_IsPrefabParent: 0
@@ -6581,7 +6649,7 @@ GameObject:
   - component: {fileID: 2084066629}
   - component: {fileID: 2084066631}
   - component: {fileID: 2084066630}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: EditorHighlightObject
   m_TagString: Neptun
   m_Icon: {fileID: 0}
@@ -6756,6 +6824,10 @@ Prefab:
       propertyPath: snapDuration
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010066341254, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
   m_IsPrefabParent: 0
@@ -6769,7 +6841,7 @@ GameObject:
   - component: {fileID: 2111614095}
   - component: {fileID: 2111614097}
   - component: {fileID: 2111614096}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Saturnring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6840,7 +6912,7 @@ GameObject:
   - component: {fileID: 2140584397}
   - component: {fileID: 2140584399}
   - component: {fileID: 2140584398}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: HighlightObject
   m_TagString: Venus
   m_Icon: {fileID: 0}
