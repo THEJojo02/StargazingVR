@@ -32,10 +32,8 @@ public class GameManager : MonoBehaviour {
         { textObject.text = x.ToString() + ":0" + sek.ToString(); }
         else
         { textObject.text = x.ToString() + ":" + sek.ToString(); }
-        if (time > 900)
-        {
-            SceneManager.LoadScene("Lose", LoadSceneMode.Additive);
-        }
+        
+      
         //Zeit hochzählen
         time = (Time.deltaTime + time);
 
@@ -43,6 +41,9 @@ public class GameManager : MonoBehaviour {
         if (time > 900)
         {
             SceneManager.UnloadSceneAsync("Aufgabe1");
+            SceneManager.UnloadSceneAsync("Aufgabe2");
+            SceneManager.UnloadSceneAsync("Aufgabe3");
+
             Lose();
         }
     }
