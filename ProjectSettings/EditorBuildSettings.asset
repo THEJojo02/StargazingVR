@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Outro.unity
     guid: aabf84a2ca47e4e4aad68cd1c12f48aa
   - enabled: 1
+    path: Assets/Gesamtszene.unity
+    guid: 0565185fa04cf6245abec701d56f9a56
+  - enabled: 1
     path: Assets/Win.unity
     guid: fb8d0f223671a09438f72371d0098256
   - enabled: 1

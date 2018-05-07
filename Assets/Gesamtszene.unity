@@ -13456,7 +13456,7 @@ MonoBehaviour:
   connectedTo: {fileID: 0}
   direction: 1
   activationDistance: 0.05
-  buttonStrength: 2
+  buttonStrength: 1
   events:
     OnPush:
       m_PersistentCalls:
@@ -16534,7 +16534,7 @@ Prefab:
     - target: {fileID: 224000012623161658, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 527
+      value: 601
       objectReference: {fileID: 0}
     - target: {fileID: 224000012623161658, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3,
         type: 2}

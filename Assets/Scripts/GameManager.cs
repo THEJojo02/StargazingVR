@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour {
     float y;
 	public Light Licht;
 	public AudioSource Sound;
-	public AudioClip Lawine;
+	public AudioSource Lawine;
 	bool zulangsam;
 	public float a;
 
@@ -41,28 +41,24 @@ public class GameManager : MonoBehaviour {
       
         //Zeit hochzählen
         time = (Time.deltaTime + time);
-		if (time > 3)
-		{
-			if (a < 1) {
+		// wenn die zeit mehr als 15 min ist...
+		if (time > 900)
+		{	a= a+1;
+			if (a == 1) {
 			Lose ();
 			}
-			a= a+1;
 		}
-
 	}
-
-        // wenn die zeit mehr als 15 min ist...
-       
-    
 
     // ...lädt die Verlieren Szene
     public void Lose ()
 	{ 	
 			SceneManager.LoadScene ("Lose", LoadSceneMode.Additive);
-			if (time > 2) {
+			if (time > 1) 
+		{
+				Lawine.Play ();
 				Licht.intensity = 0.5f * 0;
 				Sound.Stop ();
-
 		}
     
 	}

@@ -2,7 +2,8 @@
 using UnityEngine.SceneManagement;
 
 public class Lose : MonoBehaviour
-{  float time;
+{ public float time;
+	public float a;
 
     public void Gesamtszene()
     {
@@ -14,8 +15,9 @@ public class Lose : MonoBehaviour
     {
         time = Time.deltaTime + time;
         if (time > 20)
-        {
+		{	
 			Gesamtszene();
+
         }
     }
 }
