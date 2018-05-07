@@ -172,6 +172,9 @@ public class nextScene : MonoBehaviour {
             LoadNextScene();
         }
     }
+	public void Menu(){
+		SceneManager.LoadScene ("Outro",LoadSceneMode.Single);
+	}
     // lädt die 2.Aufgabe,3.Aufgabe oder den Schluss wieder additiv
     public void LoadNextScene()
     {
@@ -182,7 +185,6 @@ public class nextScene : MonoBehaviour {
         else if (Aufgabe2 == true)
         {
             SceneManager.LoadScene("Aufgabe3", LoadSceneMode.Additive);
-            Debug.Log("Hui");
         }
         else if (Aufgabe3 == true)
         {

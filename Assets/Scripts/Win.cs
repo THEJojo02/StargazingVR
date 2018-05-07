@@ -4,9 +4,9 @@ using UnityEngine.SceneManagement;
 public class Win : MonoBehaviour {
     float time;
 
-    public void Outro()
+    public void Gesamtszene()
     {
-        SceneManager.LoadScene("Outro", LoadSceneMode.Single);
+        SceneManager.LoadScene("Gesamtszene", LoadSceneMode.Single);
     }
 
 
@@ -15,7 +15,7 @@ public class Win : MonoBehaviour {
         time = Time.deltaTime + time;
         if (time > 20)
         {
-            Outro();
+			Gesamtszene();
         }
     }
 
