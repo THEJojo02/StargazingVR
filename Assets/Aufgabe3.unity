@@ -175,6 +175,20 @@ Prefab:
       propertyPath: validObjectListPolicy
       value: 
       objectReference: {fileID: 257904761}
+    - target: {fileID: 114000012880271118, guid: 5d323709f0cbd454196647d9d8f2dd84,
+        type: 2}
+      propertyPath: defaultSnappedObject
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010066341254, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54000011112244728, guid: 5d323709f0cbd454196647d9d8f2dd84,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
   m_IsPrefabParent: 0
@@ -887,6 +901,7 @@ MonoBehaviour:
   Spiegel2: {fileID: 792258727}
   Linse: {fileID: 1984046639}
   Aufgabe3: 0
+  green: 1
 --- !u!1001 &472765993
 Prefab:
   m_ObjectHideFlags: 0
@@ -949,6 +964,11 @@ Prefab:
       propertyPath: validObjectListPolicy
       value: 
       objectReference: {fileID: 472765997}
+    - target: {fileID: 114000012880271118, guid: 5d323709f0cbd454196647d9d8f2dd84,
+        type: 2}
+      propertyPath: defaultSnappedObject
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
   m_IsPrefabParent: 0
@@ -1150,14 +1170,14 @@ Transform:
   m_PrefabParentObject: {fileID: 400004, guid: a338c823a3c141d4180110e569833ece, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 792258727}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.712, y: 0.1467, z: 0.452}
   m_LocalScale: {x: -4.7209077, y: -4.7209077, z: -0.55060273}
   m_Children:
   - {fileID: 2045009871}
   m_Father: {fileID: 283712060}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &792258729
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1446,7 +1466,7 @@ MonoBehaviour:
   holdButtonToGrab: 0
   stayGrabbedOnTeleport: 0
   validDrop: 1
-  grabOverrideButton: 3
+  grabOverrideButton: 7
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 915535718}
   secondaryGrabActionScript: {fileID: 915535719}

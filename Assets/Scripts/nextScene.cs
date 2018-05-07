@@ -50,6 +50,7 @@ public class nextScene : MonoBehaviour {
     public GameObject Spiegel2;
     public GameObject Linse;
     public bool Aufgabe3;
+	float time;
 
     // Update wird einmal pro Bild geladen
     void Update() {
@@ -126,6 +127,7 @@ public class nextScene : MonoBehaviour {
 
 
     // Aufgabe3
+
         if (Spiegel1 != null)
         { finishedSp1 = Spiegel1.GetComponent<Aufgabe3>().finishSp1; }
         if (Spiegel1 != null)
@@ -141,15 +143,24 @@ public class nextScene : MonoBehaviour {
 		}*/
 
         if ((finishedSp1 == true) && (finishedSp2 == true ) && (finishedLi == true))
-        {
+		{	if (green==true){
+				
+			
             Spiegel1.GetComponent<Aufgabe3>().mMaterial.color = Color.green;
             Spiegel2.GetComponent<Aufgabe3>().mMaterial.color = Color.green;
             Linse.GetComponent<Aufgabe3>().mMaterial.color = Color.green;
             Aufgabe3 = true;
-            NextTask();
+				time = Time.deltaTime + time;
+				if (time > 8)
+				{
+					NextTask();
+				}
+           
+
+			}
         }
     }
-
+	public bool green;
 
     // für Szenenwechsel
 
