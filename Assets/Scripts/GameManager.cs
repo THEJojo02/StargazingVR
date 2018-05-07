@@ -12,7 +12,10 @@ public class GameManager : MonoBehaviour {
     float x;
     float y;
 	public Light Licht;
-
+	public AudioSource Sound;
+	public AudioClip Lawine;
+	bool zulangsam;
+	public float a;
 
     // am Anfand der Szene gleich Aufgabe 1 additiv laden
     public void LoadScenea()
@@ -38,24 +41,27 @@ public class GameManager : MonoBehaviour {
       
         //Zeit hochzählen
         time = (Time.deltaTime + time);
+		if (time > 3)
+		{
+			if (a < 1) {
+			Lose ();
+			}
+			a= a+1;
+		}
+
+	}
 
         // wenn die zeit mehr als 15 min ist...
-        if (time > 3)
-        {
-            SceneManager.UnloadSceneAsync("Aufgabe1");
-            SceneManager.UnloadSceneAsync("Aufgabe2");
-            SceneManager.UnloadSceneAsync("Aufgabe3");
-            Lose();
-			SceneManager.LoadScene("Lose", LoadSceneMode.Additive);
-        }
-    }
+       
+    
 
     // ...lädt die Verlieren Szene
     public void Lose ()
-	{
-		SceneManager.LoadScene ("Lose", LoadSceneMode.Additive);
-		if (time > 2) {
-			Licht.intensity = 0.5f * 0;
+	{ 	
+			SceneManager.LoadScene ("Lose", LoadSceneMode.Additive);
+			if (time > 2) {
+				Licht.intensity = 0.5f * 0;
+				Sound.Stop ();
 
 		}
     
