@@ -9596,7 +9596,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "- durchschnittlich gro\xDFer Stern\n- 330 000-fache Masse der \n  Erde\n-
-    Sonnenflecken aufgrung von \n  Magnetfeldanomalien"
+    Sonnenflecken aufgrund von \n  Magnetfeldanomalien"
 --- !u!222 &613906300
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14859,7 +14859,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 10.5, y: -10.5}
+  m_AnchoredPosition: {x: 10.5, y: -14.1}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &911100241
@@ -14895,7 +14895,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "- keine Atmosph\xE4re\n- 58,6 Erdtage \u2259 1 Tag\n- kein Mond"
+  m_Text: "- keine Atmosph\xE4re\n- 58,6 Erdtage \u2259 \n   1 Merkurtag\n- kein Mond"
 --- !u!222 &911100242
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20850,7 +20850,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "- gr\xF6\xDFter Planet des \n   Sonnenytems\n- dichte Atmosph\xE4re bildet
+  m_Text: "- gr\xF6\xDFter Planet des \n   Sonnensytems\n- dichte Atmosph\xE4re bildet
     \n  Streifenmuster\n- gro\xDFer roter Fleck -> \n  Sturmwirbel"
 --- !u!222 &1214617138
 CanvasRenderer:
@@ -28746,7 +28746,7 @@ Prefab:
       objectReference: {fileID: 1645473638}
     - target: {fileID: 1000011105831702, guid: e3811576a34988d47b60f99463017a58, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000012948772104, guid: e3811576a34988d47b60f99463017a58,
         type: 2}
