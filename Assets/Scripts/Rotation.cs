@@ -12,13 +12,15 @@ public class Rotation : MonoBehaviour {
 
 
 	void RotationPlaneten(){
-
+		if (objectgrabbed == false){
 		transform.RotateAround (Bahn.transform.position, Vector3.up, speed * Time.deltaTime); //Rotieren des Planeten
+		}
 	}
 
 	void RotationSonne(){
-
+		if (objectgrabbed == false){
 		transform.RotateAround (Bahn.transform.position, Vector3.up, speed * Time.deltaTime); //Rotieren der Sonne
+		}
 	}
 
 	bool isSnappedso;   // Anlegen der Variablen für die Planeten
@@ -39,6 +41,7 @@ public class Rotation : MonoBehaviour {
 	public bool finishve;
 	public bool finishur;
 	public bool finishju;
+	public bool objectgrabbed;
 
 
     // Funktionen werden aufgerufen wenn Planet richtig gesnappt ist, setzt Planeten-Variable auf true 
@@ -82,6 +85,9 @@ public class Rotation : MonoBehaviour {
 
 
     void Update () {
+
+		var planetgrab = GetComponentInParent<VRTK_InteractableObject> ();
+		objectgrabbed = planetgrab.IsGrabbed ();
 		//prüfen, ob Planeten an richtiger Stelle
 		//rotieren, wenn Planet an richtiger Stelle
         //Variablen finish.. auf true setzen
