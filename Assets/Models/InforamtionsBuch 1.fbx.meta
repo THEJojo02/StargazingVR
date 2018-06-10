@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 5d05a09f7e9466241af17f96e6158e7a
-timeCreated: 1528637700
+guid: 6972de7d8da7f42d8837abc787e05e3d
+timeCreated: 1528655749
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -15,10 +15,15 @@ ModelImporter:
     400004: Cube.002
     400006: Cube.027
     400008: //RootNode
-    2100000: No Name
-    2100002: Material.007
-    2100004: Buchoben
-    2100006: Buch
+    2100000: Seite1.001
+    2100002: Bild1.001
+    2100004: Bild2.001
+    2100006: Seite1
+    2100008: Bild1
+    2100010: Bild2
+    2100012: Material.007
+    2100014: Buchoben
+    2100016: Bild
     2300000: Cube
     2300002: Cube.001
     2300004: Cube.002
@@ -36,7 +41,7 @@ ModelImporter:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
