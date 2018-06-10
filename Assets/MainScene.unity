@@ -2641,7 +2641,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400038, guid: 7e24c0deb2642e64bb7855cc317f6d7e, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 165631881}
-  m_LocalRotation: {x: -0.506888, y: 0.49660626, z: 0.5032986, w: 0.4930895}
+  m_LocalRotation: {x: -0.50688803, y: 0.4966063, z: 0.50329864, w: 0.49308953}
   m_LocalPosition: {x: 0.0009205972, y: 0.0055467864, z: 0.011438775}
   m_LocalScale: {x: 0.27174988, y: 3.8539555, z: 1.2212349}
   m_Children: []
@@ -16146,7 +16146,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: -0.01, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.3990433, y: 1.155844, z: 1.8879927}
+  m_ConnectedAnchor: {x: -1.9180431, y: 1.155844, z: 1.8979927}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -16222,7 +16222,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1004358646}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a3abaf4521bf2344ea21ed3020b98eb2, type: 3}
   m_Name: 
@@ -16235,11 +16235,11 @@ MonoBehaviour:
   holdButtonToGrab: 0
   stayGrabbedOnTeleport: 0
   validDrop: 1
-  grabOverrideButton: 7
+  grabOverrideButton: 10
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 1004358650}
   secondaryGrabActionScript: {fileID: 1004358649}
-  isUsable: 1
+  isUsable: 0
   holdButtonToUse: 0
   useOnlyIfGrabbed: 0
   pointerActivatesUseAction: 0
@@ -16310,7 +16310,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1004358646}
   m_LocalRotation: {x: -0.7069472, y: -0.007152892, z: -0.007150396, w: 0.70719403}
-  m_LocalPosition: {x: -2.39, y: 1.156, z: 1.441}
+  m_LocalPosition: {x: -2.494, y: 1.156, z: 1.439}
   m_LocalScale: {x: 2.795972, y: 44.708424, z: 97.21644}
   m_Children: []
   m_Father: {fileID: 0}
@@ -16748,7 +16748,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400024, guid: 7e24c0deb2642e64bb7855cc317f6d7e, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1011682899}
-  m_LocalRotation: {x: -0.506888, y: 0.49660626, z: 0.5032986, w: 0.4930895}
+  m_LocalRotation: {x: -0.50688803, y: 0.4966063, z: 0.50329864, w: 0.49308953}
   m_LocalPosition: {x: 0.0022368818, y: -0.008803166, z: 0.0037788344}
   m_LocalScale: {x: 0.27174988, y: 3.8539555, z: 1.2212349}
   m_Children: []
@@ -20596,7 +20596,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400030, guid: 7e24c0deb2642e64bb7855cc317f6d7e, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1261279391}
-  m_LocalRotation: {x: -0.506888, y: 0.49660626, z: 0.5032986, w: 0.4930895}
+  m_LocalRotation: {x: -0.50688803, y: 0.4966063, z: 0.50329864, w: 0.49308953}
   m_LocalPosition: {x: 0.0021, y: -0.00891, z: 0.00208}
   m_LocalScale: {x: 0.27174988, y: 3.8539555, z: 1.2212349}
   m_Children: []
@@ -22920,7 +22920,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400050, guid: 7e24c0deb2642e64bb7855cc317f6d7e, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1439328635}
-  m_LocalRotation: {x: -0.506888, y: 0.49660626, z: 0.5032986, w: 0.4930895}
+  m_LocalRotation: {x: -0.50688803, y: 0.4966063, z: 0.50329864, w: 0.49308953}
   m_LocalPosition: {x: 0.001705295, y: -0.0021068915, z: 0.008487254}
   m_LocalScale: {x: 0.21210058, y: 3.8539555, z: 1.2212229}
   m_Children: []
@@ -29669,7 +29669,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400044, guid: 7e24c0deb2642e64bb7855cc317f6d7e, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2060009337}
-  m_LocalRotation: {x: -0.506888, y: 0.49660626, z: 0.5032986, w: 0.4930895}
+  m_LocalRotation: {x: -0.50688803, y: 0.4966063, z: 0.50329864, w: 0.49308953}
   m_LocalPosition: {x: 0.0010574794, y: 0.005653622, z: 0.013137611}
   m_LocalScale: {x: 0.27174988, y: 3.8539555, z: 1.2212349}
   m_Children: []
