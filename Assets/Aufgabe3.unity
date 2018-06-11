@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414727, b: 0.121078536, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2468,8 +2468,6 @@ GameObject:
   - component: {fileID: 1332888853}
   - component: {fileID: 1332888852}
   - component: {fileID: 1332888854}
-  - component: {fileID: 1332888855}
-  - component: {fileID: 1332888856}
   m_Layer: 2
   m_Name: Teleskop
   m_TagString: Untagged
@@ -2549,30 +2547,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!65 &1332888855
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1332888850}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.041407287, y: 0.09556711, z: 0.020882988}
-  m_Center: {x: 0.0009101761, y: -0.03237562, z: 0.00044150185}
---- !u!65 &1332888856
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1332888850}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.010816583, y: 0.025335837, z: 0.020055098}
-  m_Center: {x: 0.004948367, y: 0.0027400258, z: 0.000027538972}
 --- !u!1 &1392165961
 GameObject:
   m_ObjectHideFlags: 0
