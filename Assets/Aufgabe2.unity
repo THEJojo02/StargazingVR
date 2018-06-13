@@ -554,7 +554,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 681932635}
-  m_Text: Ordne die Sterne!
+  m_Text: "Ordne die \nSterne!"
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
