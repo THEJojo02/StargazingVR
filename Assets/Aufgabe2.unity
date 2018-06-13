@@ -1641,7 +1641,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 921017986}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.168, z: 0.007}
+  m_LocalPosition: {x: -0.188, y: 0.065, z: 0.007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 989109372}
@@ -1742,7 +1742,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1049149419}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.156, z: 0.022}
+  m_LocalPosition: {x: -0.089, y: -0.259, z: 0.029}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1872519232}
@@ -2850,7 +2850,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1479838621}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.033, z: 0.013}
+  m_LocalPosition: {x: -0.197, y: -0.008, z: 0.013}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 897357617}
@@ -2867,7 +2867,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000013912359922, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.1498547
+      value: -2.1432
       objectReference: {fileID: 0}
     - target: {fileID: 4000013912359922, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3113,7 +3113,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1629713757}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0125}
+  m_LocalPosition: {x: -0.238, y: -0.04, z: 0.0125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1801511258}
@@ -3130,11 +3130,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000013912359922, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.152855
+      value: -2.1501
       objectReference: {fileID: 0}
     - target: {fileID: 4000013912359922, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.0110002
+      value: 2.019
       objectReference: {fileID: 0}
     - target: {fileID: 4000013912359922, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3322,7 +3322,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013912359922, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.121
+      value: 1.1469
       objectReference: {fileID: 0}
     - target: {fileID: 4000013912359922, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4281,7 +4281,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1950699230}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.061, z: -0.002}
+  m_LocalPosition: {x: -0.319, y: -0.014, z: -0.002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1791758521}
@@ -4742,38 +4742,21 @@ MonoBehaviour:
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   allowedTouchControllers: 0
   ignoredColliders: []
-  isGrabbable: 0
-  holdButtonToGrab: 0
+  isGrabbable: 1
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 0
   validDrop: 1
-  grabOverrideButton: 0
+  grabOverrideButton: 7
   allowedGrabControllers: 0
-  grabAttachMechanicScript: {fileID: 2016752710}
+  grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 2016752711}
   isUsable: 1
-  holdButtonToUse: 0
+  holdButtonToUse: 1
   useOnlyIfGrabbed: 0
   pointerActivatesUseAction: 0
-  useOverrideButton: 0
+  useOverrideButton: 7
   allowedUseControllers: 0
   usingState: 0
---- !u!114 &2016752710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2016752707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ec2ac476f2fc9a45a4e69712580a603, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  precisionGrab: 0
-  rightSnapHandle: {fileID: 0}
-  leftSnapHandle: {fileID: 0}
-  throwVelocityWithAttachDistance: 0
-  throwMultiplier: 1
-  onGrabCollisionDelay: 0
 --- !u!114 &2016752711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4799,21 +4782,10 @@ MonoBehaviour:
   defaultEvents:
     OnValueChanged:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2016752708}
-          m_MethodName: NextTask
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  interactWithoutGrab: 1
+  interactWithoutGrab: 0
   connectedTo: {fileID: 0}
   direction: 1
   activationDistance: 0.05

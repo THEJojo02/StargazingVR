@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0030897825, g: 0.0028942472, b: 0.0031967217, a: 1}
+  m_IndirectSpecularColor: {r: 0.003089778, g: 0.0028942404, b: 0.0031967133, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -8813,8 +8813,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.008055815, y: 0.046798512, z: 0.0010581776}
-  m_Center: {x: -0.029993128, y: 0.000033278473, z: 0.00052909815}
+  m_Size: {x: 0.008055815, y: 0.04699028, z: 0.0010581776}
+  m_Center: {x: -0.029993119, y: -0.000062586165, z: 0.0005290982}
 --- !u!65 &376271213
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8825,8 +8825,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.032798674, y: 0.006785338, z: 1}
-  m_Center: {x: -0.007277882, y: -0.019891009, z: -6.77807e-12}
+  m_Size: {x: 0.032798674, y: 0.007143501, z: 0.00091242814}
+  m_Center: {x: -0.0072778817, y: -0.020070098, z: 0.0005591153}
 --- !u!1 &376906397
 GameObject:
   m_ObjectHideFlags: 0
@@ -21571,7 +21571,6 @@ GameObject:
   - component: {fileID: 856401928}
   - component: {fileID: 856401927}
   - component: {fileID: 856401926}
-  - component: {fileID: 856401925}
   - component: {fileID: 856401924}
   - component: {fileID: 856401923}
   - component: {fileID: 856401922}
@@ -21596,21 +21595,10 @@ MonoBehaviour:
   defaultEvents:
     OnValueChanged:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_MethodName: NextTask
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  interactWithoutGrab: 1
+  interactWithoutGrab: 0
   connectedTo: {fileID: 0}
   direction: 1
   activationDistance: 0.05
@@ -21681,38 +21669,21 @@ MonoBehaviour:
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   allowedTouchControllers: 0
   ignoredColliders: []
-  isGrabbable: 0
-  holdButtonToGrab: 0
+  isGrabbable: 1
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 0
   validDrop: 1
-  grabOverrideButton: 0
+  grabOverrideButton: 7
   allowedGrabControllers: 0
-  grabAttachMechanicScript: {fileID: 856401925}
+  grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 856401926}
-  isUsable: 0
+  isUsable: 1
   holdButtonToUse: 1
   useOnlyIfGrabbed: 0
   pointerActivatesUseAction: 0
-  useOverrideButton: 0
+  useOverrideButton: 7
   allowedUseControllers: 0
   usingState: 0
---- !u!114 &856401925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 856401921}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ec2ac476f2fc9a45a4e69712580a603, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  precisionGrab: 0
-  rightSnapHandle: {fileID: 0}
-  leftSnapHandle: {fileID: 0}
-  throwVelocityWithAttachDistance: 0
-  throwMultiplier: 1
-  onGrabCollisionDelay: 0
 --- !u!114 &856401926
 MonoBehaviour:
   m_ObjectHideFlags: 0

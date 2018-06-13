@@ -6,7 +6,7 @@ public class ScenenWechsel : MonoBehaviour {
     float time;
 
 	void Update () {
-        if (time > 30)
+        if (time > 20)
         {
             SceneManager.LoadScene("Intro",LoadSceneMode.Single);
         }

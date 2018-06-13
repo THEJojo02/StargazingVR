@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.003089778, g: 0.0028942404, b: 0.0031967133, a: 1}
+  m_IndirectSpecularColor: {r: 0.0030897777, g: 0.0028942425, b: 0.0031967168, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1431,7 +1431,6 @@ GameObject:
   - component: {fileID: 332206640}
   - component: {fileID: 332206636}
   - component: {fileID: 332206637}
-  - component: {fileID: 332206638}
   - component: {fileID: 332206639}
   - component: {fileID: 332206633}
   - component: {fileID: 332206634}
@@ -1490,21 +1489,10 @@ MonoBehaviour:
   defaultEvents:
     OnValueChanged:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 332206633}
-          m_MethodName: NextTask
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
       m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  interactWithoutGrab: 1
+  interactWithoutGrab: 0
   connectedTo: {fileID: 0}
   direction: 1
   activationDistance: 0.05
@@ -1552,23 +1540,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18055ba762aa3994f9c10208cd088bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &332206638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 332206632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ec2ac476f2fc9a45a4e69712580a603, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  precisionGrab: 0
-  rightSnapHandle: {fileID: 0}
-  leftSnapHandle: {fileID: 0}
-  throwVelocityWithAttachDistance: 0
-  throwMultiplier: 1
-  onGrabCollisionDelay: 0
 --- !u!114 &332206639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1584,19 +1555,19 @@ MonoBehaviour:
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   allowedTouchControllers: 0
   ignoredColliders: []
-  isGrabbable: 0
-  holdButtonToGrab: 0
+  isGrabbable: 1
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 0
   validDrop: 1
-  grabOverrideButton: 0
+  grabOverrideButton: 7
   allowedGrabControllers: 0
-  grabAttachMechanicScript: {fileID: 332206638}
+  grabAttachMechanicScript: {fileID: 0}
   secondaryGrabActionScript: {fileID: 332206637}
   isUsable: 0
   holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
-  useOverrideButton: 0
+  useOverrideButton: 7
   allowedUseControllers: 0
   usingState: 0
 --- !u!23 &332206640
@@ -3727,7 +3698,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 665839617}
   m_LocalRotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 5.133, y: -1.033, z: -4.896}
+  m_LocalPosition: {x: 5.1908, y: -1.1905, z: -4.896}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 2100299255}
